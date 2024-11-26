@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your CSS file (e.g., App.css) */
+
+.text-rotate-circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+  }
+  
+  .box-circle-round {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* Primary color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup-video svg {
+    z-index: 10;
+  }
+  
+  .circle-text-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg);
+    animation: rotate 10s linear infinite;
+  }
+  
+  .circle-text span {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+      

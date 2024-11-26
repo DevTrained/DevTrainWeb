@@ -1,0 +1,311 @@
+/* Tailwind base and utility imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this for the spinning text effect */
+.circle-text-wrapper {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left : -12%;
+  top : 1%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: var(--tc-body-font-family); */
+  animation: rotate 10s linear infinite;
+}
+
+.circle-text {
+    /* border : 2px solid yellow; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5em;
+    white-space: nowrap;
+    position: absolute;
+    transform-origin: center center;
+    /* animation: rotate 10s linear infinite; */
+    font-family: 'Poppins, sans-serif';
+}
+
+.circle-text span {
+  display: inline-block;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  position: absolute;
+  transform-origin: center center;
+  top: 80%;
+}
+
+.circle-text span {
+  display: inline-block;
+  position: absolute;
+  transform-origin: center -50px; /* Adjust this value for circle radius */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInSlideRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInSlideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fadeInSlideRight {
+    animation: fadeInSlideRight 1s ease-in-out forwards;
+  }
+  
+  .animate-fadeInSlideLeft {
+    animation: fadeInSlideLeft 1s ease-in-out forwards;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* Custom Stroke Text Class */
+.stroke-text {
+    -webkit-text-stroke: 2px #089084; /* Outline color */
+    color: transparent; /* Transparent fill */
+  }
+  
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+
+  @keyframes flip {
+    0% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .flip-animation {
+    animation: flip 0.6s ease-in-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/* Infinite scrolling animations */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+/* marquee animation */
+.animate-marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 20s linear infinite;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+
+
+
+
+
+
+  
+/* heat annimation */
+@keyframes jumpFlip {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotateY(180deg);
+  }
+}
+
+@keyframes shineTop {
+  0% {
+    transform: translateY(0) scaleX(0);
+  }
+  50% {
+    transform: translateY(-30px) scaleX(1);
+  }
+  100% {
+    transform: translateY(0) scaleX(0);
+  }
+}
+
+@keyframes shineBottom {
+  0% {
+    transform: translateY(0) scaleX(0);
+  }
+  50% {
+    transform: translateY(30px) scaleX(1);
+  }
+  100% {
+    transform: translateY(0) scaleX(0);
+  }
+}
+
+.heart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.heart-icon {
+  animation: jumpFlip 1s ease-in-out infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+.heart-container::before,
+.heart-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.heart-container::before {
+  animation: shineTop 1s ease-in-out infinite;
+  top: -10px; /* Adjust for position above the heart */
+}
+
+.heart-container::after {
+  animation: shineBottom 1s ease-in-out infinite;
+  bottom: -10px; /* Adjust for position below the heart */
+}
+
+/* Rocket */
+.heart-icon.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* button */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.heartbeat {
+  animation: heartbeat 1s ease-in-out infinite;
+}
+  
