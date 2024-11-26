@@ -47,7 +47,7 @@ function Navbar() {
             {/* Navbar Content */}
             <div className="h-20 xl:h-24 lg:h-24 p-4 flex items-center justify-end md:gap-4">
                 {/* Logo */}
-                <img className="absolute sm:h-20 h-20 md:h-24 lg:h-28 xl:h-28 left-1 sm:left-4 z-30" src="./public/Assets/Images/i1.png" alt="Logo" />
+                <img className="absolute sm:h-20 h-20 md:h-24 lg:h-28 xl:h-28 left-1 sm:left-4 z-30" src="/Assets/Images/i1.png" alt="Logo" />
 
                 {/* Mobile Hamburger Icon */}
                 <div className="md:hidden flex items-center z-40">
