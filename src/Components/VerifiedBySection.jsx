@@ -3,15 +3,15 @@ import React from 'react';
 const VerifiedBySection = () => {
   // Array of logo paths for verified companies
   const logos = [
-    '/public/Assets/Images/verify_Brands (1).webp',
-    '/public/Assets/Images/verify_Brands (2).webp',
-    '/public/Assets/Images/verify_Brands (3).webp',
-    '/public/Assets/Images/verify_Brands (4).webp',
-    '/public/Assets/Images/verify_Brands (5).webp',
-    '/public/Assets/Images/verify_Brands (6).webp',
-    '/public/Assets/Images/verify_Brands (7).webp',
-    '/public/Assets/Images/verify_Brands (8).webp',
-    '/public/Assets/Images/verify_Brands (9).webp',
+    '/Assets/Images/verify_Brands (1).webp',
+    '/Assets/Images/verify_Brands (2).webp',
+    '/Assets/Images/verify_Brands (3).webp',
+    '/Assets/Images/verify_Brands (4).webp',
+    '/Assets/Images/verify_Brands (5).webp',
+    '/Assets/Images/verify_Brands (6).webp',
+    '/Assets/Images/verify_Brands (7).webp',
+    '/Assets/Images/verify_Brands (8).webp',
+    '/Assets/Images/verify_Brands (9).webp',
     // Add more logos as needed
   ];
 
