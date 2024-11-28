@@ -15,7 +15,7 @@ const VideoSection = () => {
       {/* Left Side: Image with Play Button */}
       <div className="relative  md:p-0 md:w-[60%] h-[50%]  xl:h-full lg:h-full p-2   sm:px-20 sm:h-[50%]   lg:w-[50%] lg:px-8   xl:w-[50%]  flex ">
       <img 
-    src="/public/Assets/Images/laptop_bg-remover.png" 
+    src="/Assets/Images/laptop_bg-remover.png" 
     alt="AI Consultancy" 
     className="w-full md:h-72 xl:p-0 h-full object-cover rounded-lg "
   />

@@ -6,35 +6,35 @@ import YourCompany from '../Components/YourCompany';
 const PortfolioBanner = () => {
   const sections = [
     {
-      image: { src: "./public/Assets/Images/Crypto.png", alt: "Crypto" },
+      image: { src: "/Assets/Images/Crypto.png", alt: "Crypto" },
       title: "Crypto App",
       description: "A decentralized platform for buying and selling cryptocurrencies, with advanced trading features.",
       extraLine: "Secure, fast, and reliable crypto trading.",
       link: "/CoinCraft"
     },
     {
-      image: { src: "./public/Assets/Images/OMS.png", alt: "Order Management" },
+      image: { src: "/Assets/Images/OMS.png", alt: "Order Management" },
       title: "Order Management System",
       description: "A comprehensive solution to streamline the management of orders, inventory, and shipping for e-commerce businesses.",
       extraLine: "Optimizing workflows and enhancing operational efficiency.",
       link: "/OrderManagement"
     },
     {
-      image: { src: "./public/Assets/Images/Food.png", alt: "Food App" },
+      image: { src: "/Assets/Images/Food.png", alt: "Food App" },
       title: "Food Delivery App",
       description: "An intuitive app connecting users with their favorite restaurants for a seamless food delivery experience.",
       extraLine: "Delivering delicious food to your doorstep.",
       link: "/GreenEats"
     },
     {
-      image: { src: "./public/Assets/Images/Taxi.png", alt: "Taxi App" },
+      image: { src: "/Assets/Images/Taxi.png", alt: "Taxi App" },
       title: "Taxi App",
       description: "A platform to book taxis easily with real-time tracking, payment options, and ride sharing features.",
       extraLine: "Your ride, just a tap away.",
       link: "/FlashTaxi"
     },
     {
-      image: { src: "./public/Assets/Images/DocMagnetprotfolio.png", alt: "DocMagnet" },
+      image: { src: "/Assets/Images/DocMagnetprotfolio.png", alt: "DocMagnet" },
       title: "DocMagnet App",
       description: "An innovative platform enhancing communication between doctors, patients, and consultants.",
       extraLine: "Empowering seamless medical consultations and efficient healthcare management.",
@@ -49,7 +49,7 @@ const PortfolioBanner = () => {
         {/* Background Image */}
         <img
           className="absolute inset-0 w-full h-full object-cover"
-          src="./public/Assets/Images/Protfolio-Banner.png"
+          src="/Assets/Images/Protfolio-Banner.png"
           alt="Portfolio Banner"
         />
 

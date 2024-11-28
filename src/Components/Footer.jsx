@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex flex-col items-center sm:items-start w-full md:w-1/3 text-center md:text-left lg:items-start lg:w-1/3 xl:w-1/4">
               <img
                 className="h-32 sm:h-32 md:h-32 xl:h-32 lg:ml-0 xl:ml-0"
-                src="Assets/Images/i2.png"
+                src="/Assets/Images/i2.png"
                 alt="DevTrain"
               />
               <div className="w-full text-left  flex item-start   lg:px-4 lg:max-w-lg ">

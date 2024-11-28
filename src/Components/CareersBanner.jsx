@@ -5,7 +5,7 @@ const CareersBanner = () => {
     <>
           <header
       className="relative bg-cover bg-center py-10 md:py-14 text-center text-white font-poppins"
-      style={{ backgroundImage: 'url("/Public/Assets/Images/PagesBanner.jpg")' }}
+      style={{ backgroundImage: 'url("/Assets/Images/PagesBanner.jpg")' }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>

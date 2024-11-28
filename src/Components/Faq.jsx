@@ -71,7 +71,7 @@ const Faq = () => {
         <div className="relative h-[50vh] md:h-[60vh]   lg:h-auto w-full md:w-1/2 lg:w-1/2 flex items-center justify-center p-4 md:p-6">
           <img
             className="h-full w-full max-w-md md:max-w-xl  sm:max-w-lg lg:max-w-lg  object-cover border-2 rounded-2xl border-black"
-            src="./public/Assets/Images/project6.png"
+            src="/Assets/Images/project6.png"
             alt=""
           />
         </div>

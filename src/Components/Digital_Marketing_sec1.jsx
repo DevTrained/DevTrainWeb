@@ -14,8 +14,8 @@ const VideoSection = () => {
       {/* Left Side: Image with Play Button */}
       <div className="relative w-full md:w-[57%] h-64 lg:w-[60%] lg:px-8  xl:w-[60%] md:h-96  md:ml-6   px-2   flex items-center justify-center">
       <img 
-    src="/public/Assets/Images/Digital_Marketing.webp" 
-    alt="AI Consultancy" 
+    src="/Assets/Images/Digital_Marketing.webp" 
+    alt="Digital Marketing"
     className="w-full h-full object-cover rounded-lg"
   />
   <button 

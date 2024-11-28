@@ -9,7 +9,7 @@ const ContactSection2 = () => {
       <div className="relative flex justify-center items-center  h-80 ">
   {/* Logo */}
   <img
-    src="/public/Assets/Images/i2.png" // Replace with actual logo URL
+    src="/Assets/Images/i2.png" // Replace with actual logo URL
     alt="DevTrain Logo"
     className="w-64 z-20"
   />
