@@ -5,7 +5,7 @@ const YourCompany = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="w-full h-[40vh] flex justify-center items-center bg-gradient-to-r from-[#175255] to-[#012236] text-white relative font-poppins">
+    <div className="w-full h-[20vh] sm:h-[40vh] flex justify-center items-center bg-gradient-to-r from-[#175255] to-[#012236] text-white relative font-poppins">
       {/* Company Name with Hover Effect and Arrow Div Positioned in Front */}
       <div 
         className="flex items-center justify-center transition-transform duration-500"

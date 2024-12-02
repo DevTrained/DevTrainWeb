@@ -14,7 +14,7 @@ const HomeSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full flex flex-col md:flex-row justify-between !px-4 py-0 sm:p-6 md:p-10 font-poppins">
+    <div className="min-h-screen w-full flex flex-col md:flex-row justify-between overflow-x-hidden !px-4 py-0 sm:p-6 md:p-10 font-poppins">
       {/* Left Side - Image Section */}
       <div className="relative   w-full md:w-1/2 flex flex-col justify-center items-center md:items-start h-full">
         {/* Main Image (Scroll-triggered Animation) */}
@@ -50,18 +50,32 @@ const HomeSection = () => {
 
       {/* Right Side - Text Section */}
       <div className="w-full md:w-1/2 flex flex-col  justify-center items-center md:items-start space-y-6 md:pl-12 h-full">
-        <div className="flex flex-row items-center pt-12 sm:pt-16 md:pt-0 lg:pt-0 xl:pt-0 space-x-2">
-          <div className="h-1 sm:w-20 w-6  md:w-20 lg:w-20 xl:w-20  bg-[#089084]  flex flex-row "data-aos="fade-up" ></div>
-          <h1 className="text-md  sm:text-2xl font-bold text-[#089084]" data-aos="fade-up">
-           Devtrain Tech Consulting Agency
-          </h1>
-          <div className="h-1 sm:w-20 w-6  md:w-20 lg:w-20 xl:w-20  bg-[#089084]  flex flex-row "data-aos="fade-up" ></div>
+      <div className="flex flex-row items-center justify-center pt-12 sm:pt-16 md:pt-0 lg:pt-0 xl:pt-0 gap-2">
+    {/* Left Line */}
+    <div
+        className="h-1 sm:w-20 w-6 md:w-10 lg:w-20 xl:w-20 bg-[#089084]"
+        data-aos="fade-up"
+    ></div>
 
-        </div>
+    {/* Text */}
+    <h1
+        className="text-md sm:text-xl md:text-xl lg:text-2xl font-bold text-[#089084] whitespace-nowrap"
+        data-aos="fade-up"
+    >
+        Devtrain Tech Consulting Agency
+    </h1>
+
+    {/* Right Line */}
+    <div
+        className="h-1 sm:w-20 w-6 md:w-10 lg:w-20 xl:w-20 bg-[#089084]"
+        data-aos="fade-up"
+    ></div>
+</div>
+
 
         {/* Company Name */}
         <div className=' w-full ' >
-        <h1 className="text-3xl ml-2 sm:ml-6 md:ml-0 lg:ml-0  xl:ml-0 sm:text-4xl font-bold md:text-left" data-aos="fade-up">
+        <h1 className="text-3xl ml-2 sm:ml-6  md:ml-0 lg:ml-0 md:text-3xl lg:text-4xl xl:text-4xl  xl:ml-0 sm:text-4xl font-bold md:text-left" data-aos="fade-up">
           Discover the best IT <br />
           <span className="relative mt-2 block"> <span className='text-[#089084]'  >strategy For Your Business</span>  <span className="text-[#089084]"></span></span>
          

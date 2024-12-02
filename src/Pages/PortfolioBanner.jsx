@@ -60,8 +60,8 @@ const PortfolioBanner = () => {
         <div className="absolute top-1/4 left-4 right-4 w-full text-white p-6 flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="w-full md:w-[60%]">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-1 bg-white"></div>
-              <p className="text-lg sm:text-2xl font-semibold font-poppins">Portfolio</p>
+              <div className="w-10 h-1 bg-[#f7ab0a]"></div>
+              <p className="text-lg sm:text-2xl text-[#f7ab0a] font-semibold font-poppins">Portfolio</p>
             </div>
             <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mt-4 mb-4 font-poppins max-w-[90vw] md:max-w-[75vw] lg:max-w-[50vw]">
               We transform your ideas into <span className="text-[#089084]">Reality</span>.

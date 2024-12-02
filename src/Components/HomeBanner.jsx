@@ -47,7 +47,7 @@ const HomeBanner = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap space-x-4 mt-10 pt-16  sm:pt-2">
+          <div className="flex flex-wrap space-x-4 mt-10 pt-8  sm:pt-2">
             <button className="bg-gradient-to-r from-[#2B7A78] to-[#2B7A78] text-white h-12 w-32 sm:h-14 sm:w-44 rounded-full p-1 text-sm sm:text-lg font-semibold flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:from-[#012236] hover:to-[#175255]">
               Hire Us
               <span className="material-icons sm:ml-2 ml-1 text-xl sm:text-2xl">arrow_forward</span>

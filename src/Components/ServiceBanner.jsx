@@ -6,24 +6,24 @@ const ServiceBanner = () => {
       {/* Background Image */}
       <img
         className="h-full w-full object-cover"
-        src="/Assets/Images/Services-Banner.png"
+        src="/Assets/Images/Service.jpg"
         alt="Portfolio Banner"
       />
-
+      
       {/* Gradient Overlay from Left (Darker) to Right (Lighter) */}
-      <div className="absolute  inset-0 bg-gradient-to-r from-black to-transparent opacity-60"></div>
+      <div className="absolute  inset-0 bg-gradient-to-r from-black to-transparent opacity-85"></div>
 
       {/* Flexbox Container for Text and Image */}
       <div className="absolute top-28 lg:top-1/4 sm:top-20 right-10 w-full text-white py-6 px-16 sm:px-20 md:px-20 lg:px-20">
         {/* Text on the Left */}
         <div className="w-full  md:w-[60%]">
           <div className='flex items-center gap-2'>
-            <div className='w-10 h-[0.3vh] bg-white'></div>
-            <p className='text-xl sm:text-2xl font-semibold font-poppins'>
+            <div className='w-10 h-[0.3vh] bg-[#f7ab0a]'></div>
+            <p className='text-xl sm:text-2xl text-[#f7ab0a] font-semibold font-poppins'>
               Our Services
             </p>
           </div>
-          <p className="text-2xl sm:text-3xl md:text-3xl font-extrabold mt-[6%] mb-4 font-poppins">
+          <p className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-extrabold mt-[6%] mb-4 font-poppins">
             Our world-class services to achieve <span className='text-[#089084]'>Business Success.</span>
           </p>
           <p className="text-sm sm:text-xl  font-medium font-poppins ">
