@@ -32,7 +32,7 @@ const PortfolioSections = () => {
       link: "/FlashTaxi",
     },
     {
-      image: { src: "/Assets/Images/DocMagnetprotfolio.jpg", alt: "DocMagnet" },
+      image: { src: "/Assets/Images/DocMagnetprotfolio.png", alt: "DocMagnet" },
       title: "DocMagnet App",
       description: "An innovative platform enhancing communication between doctors, patients, and consultants.",
       extraLine: "Empowering seamless medical consultations and efficient healthcare management.",
