@@ -28,8 +28,9 @@ import PortfolioSections from './Pages/PortfolioSections';
 import Careers from './Pages/Careers';
 import CareersForm from './Components/CareersForm';
 import ContactUs from './Pages/ContactUs';
-import AboutUs from './Pages/AboutUs';
+
 import NotFoundPage from './Components/NotFoundPage';
+import AboutUs from './Pages/AboutUs';
 
 const App = () => {
   return (
@@ -60,6 +61,8 @@ const App = () => {
         <Route path = '/Careers' element={<Careers/>}/>
         <Route path = '/ContactUs' element={<ContactUs/>}/>
         <Route path = '/AboutUs' element={<AboutUs/>}/>
+
+
 
        
          <Route path="*" element={<NotFoundPage />} />

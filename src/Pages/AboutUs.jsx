@@ -10,11 +10,11 @@ import MarqueeSection from '../Components/MarqueeSection';
 const AboutUs = () => {
   return (
     <>
-   {/* <AboutUsBanner/>
+   <AboutUsBanner/>
    <AboutUsSection1/> 
    <BackgroundImage/>
    <TeamSection/>
-   <MarqueeSection/> */}
+   <MarqueeSection/>
     </>
   );
 };
