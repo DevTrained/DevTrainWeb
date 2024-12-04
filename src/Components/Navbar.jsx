@@ -5,7 +5,8 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [scrollProgress, setScrollProgress] = useState(0);
-    const location = useLocation(); // Hook to detect route changes
+    const location = useLocation();
+    const is404Page = location.pathname === '/NotFoundPage'; // Check if on 404 page
 
     // Handle scroll events for changing navbar color and showing scroll progress
     const handleScroll = () => {
@@ -24,7 +25,7 @@ function Navbar() {
     // Close navbar on route change
     useEffect(() => {
         setIsOpen(false); // Close the menu when the route changes
-    }, [location.pathname]); // Runs whenever the route changes
+    }, [location.pathname]);
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -43,12 +44,15 @@ function Navbar() {
         { title: "Contact Us", link: "/ContactUs" },
     ];
 
+    // Navbar class based on scroll and 404 page
+    const navbarClass = is404Page
+        ? "bg-[#012236]"  // Green when on 404 page
+        : isScrolled
+        ? "bg-[#089084]"  // Blue when scrolled
+        : "bg-[#089084]"; // Transparent by default
+
     return (
-        <nav
-            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-                isScrolled ? "bg-[#089084]" : "bg-transparent"
-            }`}
-        >
+        <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${navbarClass}`}>
             {/* Scroll Progress Bar */}
             <div className="h-20 lg:h-24 absolute flex items-end justify-end w-full">
                 <div
@@ -89,40 +93,39 @@ function Navbar() {
 
                 {/* Mobile Menu */}
                 <div
-    className={`md:hidden transition-all duration-500 ease-in-out pl-2 sm:pl-5 z-40 pt-2 overflow-hidden ${
-        isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-    } absolute h-screen top-20 left-0 right-0 bg-[#012236]`}
->
-    {menuItems.map((item) => (
-        <Link
-            key={item.title}
-            to={item.link}
-            className="text-white text-lg px-4 py-2 block hover:underline hover:underline-offset-4 hover:decoration-[#012236] hover:decoration-[3px]"
-        >
-            {item.title}
-        </Link>
-    ))}
+                    className={`md:hidden transition-all duration-500 ease-in-out pl-2 sm:pl-5 z-40 pt-2 overflow-hidden ${
+                        isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+                    } absolute h-screen top-20 left-0 right-0 bg-[#012236]`}
+                >
+                    {menuItems.map((item) => (
+                        <Link
+                            key={item.title}
+                            to={item.link}
+                            className="text-white text-lg px-4 py-2 block hover:underline hover:underline-offset-4 hover:decoration-[#012236] hover:decoration-[3px]"
+                        >
+                            {item.title}
+                        </Link>
+                    ))}
 
-    {/* Email Section */}
-    <div className="text-white text-center mx-4 mt-6">
-        <p className="text-lg flex items-center justify-start gap-2">
-            <i className="fas fa-envelope text-xl text-[#f7ab0a]"></i> {/* Email Icon */}
-            <a href="mailto:example@email.com" className="hover:underline ">
-                example@email.com
-            </a>
-        </p>
-    </div>
+                    {/* Email Section */}
+                    <div className="text-white text-center mx-4 mt-6">
+                        <p className="text-lg flex items-center justify-start gap-2">
+                            <i className="fas fa-envelope text-xl text-[#f7ab0a]"></i> {/* Email Icon */}
+                            <a href="mailto:example@email.com" className="hover:underline ">
+                                example@email.com
+                            </a>
+                        </p>
+                    </div>
 
-    {/* Full-Width Button */}
-    <div className="text-center mx-4 mt-6">
-        <button className="w-full bg-[#089084] text-white py-3 rounded-lg text-xl font-semibold hover:bg-[#175255] hover:text-white transition-all duration-300">
-            GET ESTIMATES
-            <br />
-            <span className="text-md font-normal">Response in 24 hours</span>
-        </button>
-    </div>
-</div>
-
+                    {/* Full-Width Button */}
+                    <div className="text-center mx-4 mt-6">
+                        <button className="w-full bg-[#089084] text-white py-3 rounded-lg text-xl font-semibold hover:bg-[#175255] hover:text-white transition-all duration-300">
+                            GET ESTIMATES
+                            <br />
+                            <span className="text-md font-normal">Response in 24 hours</span>
+                        </button>
+                    </div>
+                </div>
 
                 {/* Phone Number Button for Larger Screens */}
                 <div className="items-center xl:block lg:block hidden z-30">

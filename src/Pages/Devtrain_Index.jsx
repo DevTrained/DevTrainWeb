@@ -18,7 +18,6 @@ const Devtrain_Index = () => {
       <HomeBanner/>
       <HomeSection/>
       <HomeServices/>
-      {/* <AnimatedSection/> */}
       <VerifiedBySection/>
      <PortfolioSections/> 
      <MarqueeSection/>

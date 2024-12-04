@@ -22,7 +22,7 @@ const YourCompany = () => {
         </h1>
 
         {/* Rounded Arrow Div with Link */}
-        <a href="/" className={`flex items-center mt-2 sm:mt-4 md:mt-4 lg:mt-5 xl:mt-5  justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-14 md:h-14  lg:w-20 lg:h-20 rounded-full bg-[#F7AB0A] transition-all duration-500 ${
+        <a href="/AboutUS" className={`flex items-center mt-2 sm:mt-4 md:mt-4 lg:mt-5 xl:mt-5  justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-14 md:h-14  lg:w-20 lg:h-20 rounded-full bg-[#F7AB0A] transition-all duration-500 ${
             hovered ? "opacity-100 sm:translate-x-10 md:translate-x-10 lg:translate-x-10 xl:translate-x-16 translate-x-2" : "opacity-0 sm:translate-x-[-20%] md:translate-x-[-20%] lg:translate-x-[-20%] xl:translate-x-[-20%] translate-x-[-40%]"
           }`}
         >
