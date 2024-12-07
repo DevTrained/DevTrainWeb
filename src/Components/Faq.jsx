@@ -94,17 +94,17 @@ const Faq = () => {
                   filter: openIndex !== null && openIndex !== index ? 'blur(4px)' : 'none',
                 }}
               >
-                <div
-                  className="flex justify-between items-center cursor-pointer"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  <h3 className="text-base md:text-lg lg:text-xl font-semibold">{faq.question}</h3>
-                  {openIndex === index ? (
-                    <FaMinus className="text-xl text-gray-600" />
-                  ) : (
-                    <FaPlus className="text-xl text-gray-600" />
-                  )}
-                </div>
+               <div
+  className="flex justify-between items-center cursor-pointer "
+  onClick={() => toggleFAQ(index)}
+>
+  <h3 className="text-base md:text-lg lg:text-xl font-semibold">{faq.question}</h3>
+  {openIndex === index ? (
+    <FaMinus className="text-xl sm:text-2xl md:text-2xl text-gray-600" />
+  ) : (
+    <FaPlus className="text-base  sm:text-2xl md:text-2xl text-gray-600" />
+  )}
+</div>
 
                 {/* FAQ Answer with Smooth Transition */}
                 <div

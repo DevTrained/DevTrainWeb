@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import PortfolioSections from './PortfolioSections';
 import YourCompany from '../Components/YourCompany';
+import { FaLightbulb } from 'react-icons/fa';
 
 const PortfolioBanner = () => {
   const sections = [
@@ -42,7 +43,6 @@ const PortfolioBanner = () => {
     },
   ];
 
-
   return (
     <>
       <div className="relative overflow-x-hidden h-screen w-full">
@@ -57,16 +57,25 @@ const PortfolioBanner = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-60"></div>
 
         {/* Flex Container for Text and Image */}
-        <div className="absolute top-1/4 left-4 right-4 w-full text-white p-6 flex flex-col md:flex-row items-center md:items-start justify-between">
+        <div className="absolute top-1/4 w-full text-white sm:px-9 md:px-10 lg:px-12 px-6 py-6 flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="w-full md:w-[60%]">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-1 bg-[#f7ab0a]"></div>
-              <p className="text-lg sm:text-2xl text-[#f7ab0a] font-semibold font-poppins">Portfolio</p>
+              <motion.div
+                className="mx-3 text-[#f7ab0a]"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1, rotate: 360 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              >
+                <FaLightbulb className="text-4xl sm:text-5xl md:text-6xl" />
+              </motion.div>
+              <h1 className="text-white font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+                Portfolio
+              </h1>
             </div>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mt-4 mb-4 font-poppins max-w-[90vw] md:max-w-[75vw] lg:max-w-[50vw]">
-              We transform your ideas into <span className="text-[#089084]">Reality</span>.
+            <p className="text-3xl sm:text-5xl md:text-5xl lg:py-2 font-extrabold mt-4 mb-4 font-poppins max-w-[90vw] md:max-w-[75vw] lg:max-w-[50vw]">
+              We transform your ideas into <span className="text-[#089084]">Reality</span>
             </p>
-            <p className="text-sm sm:text-base md:text-lg font-medium max-w-[90vw] md:max-w-[75vw] lg:max-w-[50vw] font-poppins hidden sm:block">
+            <p className="text-md sm:text-lg md:text-xl font-medium max-w-[90vw] md:max-w-[75vw] lg:max-w-[50vw] font-poppins">
               We bring your product to life with a unique vision and soul to elevate your digital presence.
             </p>
           </div>
@@ -74,8 +83,8 @@ const PortfolioBanner = () => {
       </div>
 
       {/* Additional Sections */}
-     <PortfolioSections/>
-     <YourCompany/>
+      <PortfolioSections />
+      <YourCompany />
     </>
   );
 };

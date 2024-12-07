@@ -1,5 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+// import { FaRocket } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
+
 
 const PortfolioSections = () => {
   const sections = [
@@ -42,16 +45,37 @@ const PortfolioSections = () => {
 
   return (
     <>
-      <h1 className="bg-gradient-to-r from-[#175255] to-[#012236] text-white text-center font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold py-4 sm:py-6 md:py-8">
-        Our Portfolio
-      </h1>
+      {/* Heading with Scroll Animation and Icon */}
+      <motion.div
+        className="flex justify-center items-center bg-gradient-to-r from-[#175255] to-[#012236] py-4 sm:py-6 md:py-8"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <h1 className="text-white font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+          Our
+        </h1>
+        <motion.div
+  className="mx-3 text-[#f7ab0a]"
+  initial={{ scale: 0 }}
+  whileInView={{ scale: 1, rotate: 360 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+>
+  <FaLightbulb className="text-4xl sm:text-5xl md:text-6xl" />
+</motion.div>
+        <h1 className="text-white font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+          Portfolio
+        </h1>
+      </motion.div>
 
+      {/* Portfolio Sections */}
       <div className="h-full w-full bg-[#e9e3d5] flex flex-col p-4 space-y-8 lg:space-y-18 overflow-x-hidden ">
         {sections.map((section, index) => (
           <div
             key={index}
             className={`relative w-full bg-white flex flex-col mx-auto ${
-              index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
           >
             {/* Image Section with Left-Right Animation */}
@@ -87,7 +111,10 @@ const PortfolioSections = () => {
                 <p className="text-gray-600 mb-4 font-poppins text-sm md:text-base lg:text-lg">
                   {section.extraLine}
                 </p>
-                <a href={section.link} className="text-[#2B7A78] hover:underline font-semibold font-poppins">
+                <a
+                  href={section.link}
+                  className="text-[#2B7A78] hover:underline font-semibold font-poppins"
+                >
                   Learn More
                 </a>
               </div>

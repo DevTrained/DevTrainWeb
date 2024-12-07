@@ -93,7 +93,7 @@ function Navbar() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`md:hidden transition-all duration-500 ease-in-out pl-2 sm:pl-5 z-40 pt-2 overflow-hidden ${
+                    className={`md:hidden transition-all duration-500 ease-in-out pl-2 sm:pl-5 z-40  overflow-hidden ${
                         isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
                     } absolute h-screen top-20 left-0 right-0 bg-[#012236]`}
                 >
@@ -101,7 +101,7 @@ function Navbar() {
                         <Link
                             key={item.title}
                             to={item.link}
-                            className="text-white text-lg px-4 py-2 block hover:underline hover:underline-offset-4 hover:decoration-[#012236] hover:decoration-[3px]"
+                            className="text-white overflow-hidden text-lg px-4 py-2 block hover:underline hover:underline-offset-4 hover:decoration-[#012236] hover:decoration-[3px]"
                         >
                             {item.title}
                         </Link>
@@ -112,7 +112,7 @@ function Navbar() {
                         <p className="text-lg flex items-center justify-start gap-2">
                             <i className="fas fa-envelope text-xl text-[#f7ab0a]"></i> {/* Email Icon */}
                             <a href="mailto:example@email.com" className="hover:underline ">
-                                example@email.com
+                                Devtrained@gmail.com
                             </a>
                         </p>
                     </div>

@@ -40,54 +40,58 @@ const AboutUsSection1 = () => {
   }, []);
 
   return (
-    <div className="text-black py-10 font-poppins mt-8">
-      <div className="container mx-auto flex flex-col md:flex-row items-start gap-8 px-4">
+    <div className="text-black lg:py-8 py-4 font-poppins overflow-x-hidden">
+      <div className=" mx-auto flex flex-col md:flex-row items-start gap-4 sm:px-8 px-4  ">
         {/* Left Image */}
-        <div className="w-full md:w-1/2 flex-shrink-0">
+        <div className="w-full md:w-1/2  flex-shrink-0">
           <img
             src="/Assets/Images/about-us-page.jpg"
             alt="Services"
-            className="rounded-lg shadow-lg w-full h-auto"
+            className="rounded-lg shadow-lg w-full h-[44vh] sm:h-[50vh] md:h-[78vh] lg:h-[75vh]   object-cover"
           />
         </div>
 
         {/* Right Content */}
-        <div className="w-full md:w-1/2 font-poppins">
-          <h2 className="text-4xl font-bold text-[#089084]">ABOUT DEVTRAIN</h2>
-          <h1 className="text-3xl md:text-5xl mt-4 font-bold">
-            Our Expertise and <br /> <span className="text-[#089084]">Services</span>
+        <div className="w-full md:w-1/2 font-poppins px-2 md:px-2 sm:px-0">
+          <h2 className="text-4xl md:text-3xl  lg:text-5xl font-bold   text-[#089084]">ABOUT DEVTRAIN</h2>
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl md:text-3xl md:mt-2 lg:mt-6 mt-4 font-bold">
+            Our Expertise and  <span className="text-[#089084]">Services</span>
           </h1>
 
-          <div className="relative flex items-center mt-6">
+          <div className="relative flex items-center ">
             {/* Vertical Line with Balls */}
             <div className="flex flex-row ml-4 top-0 gap-4">
               {/* First Vertical Line with Ball */}
               <div className="h-12 flex ml-20 justify-center rotate-90 relative">
                 {/* Line */}
-                <div className="w-1.5 h-32 bg-[#F7AB0A] absolute"></div>
+                <div className="w-1 h-32 bg-[#F7AB0A] absolute"></div>
                 {/* Dot */}
                 <div className="w-4 h-4 border-2 border-[#F7AB0A] bg-black rounded-full relative top-0 transform animate-move-down"></div>
               </div>
             </div>
           </div>
 
-          <p className="text-black text-lg mt-6">
-            AAMAX is a full-service digital agency that specializes in website
+          <p className="text-black text-lg md:text-lg  lg:text-lg   lg:py-0 xl:py-4 sm:text-xl">
+            Devtrain is a full-service digital agency that specializes in website
             design and development, web application development, digital
-            marketing, and graphic design. At AAMAX, we are committed to
+            marketing, and graphic design. At Devtrain, we are committed to
             delivering innovative and effective solutions to our clients across
             a wide range of industries, from small businesses to large
             corporations.
           </p>
 
           {/* Progress Bars with Animation */}
-          <div className="space-y-4 pt-12">
+         
+        </div>
+        </div>
+        <div  className=' flex  justify-end xl:px-10 sm:px-9 md:px-11 px-5 pt-8 ' >
+        <div className="space-y-4 w-full  ">
             {progressData.map((item, index) => (
               <div key={index}>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="w-full bg-[#e5e5e5] rounded-full h-4 overflow-hidden">
                   <div
-                    ref={(el) => progressBarsRef.current[index] = el} // Set reference for each progress bar
+                    ref={(el) => (progressBarsRef.current[index] = el)} // Set reference for each progress bar
                     className="bg-[#089084] text-white flex items-center justify-center h-4 rounded-full progress-bar"
                     style={{
                       width: animationTriggered ? `${item.percentage}%` : '0%',
@@ -99,8 +103,7 @@ const AboutUsSection1 = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
+          </div>
 
       {/* Custom Animation for the Progress Bars */}
       <style jsx>{`
@@ -123,6 +126,7 @@ const AboutUsSection1 = () => {
         /* Progress Bar Animation */
         .progress-bar {
           transition: width 2s ease-out; /* Smooth transition for width */
+        }
         }
       `}</style>
     </div>

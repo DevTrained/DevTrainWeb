@@ -47,16 +47,17 @@ const HomeBanner = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap space-x-4 mt-10 pt-8  sm:pt-2">
-            <button className="bg-gradient-to-r from-[#2B7A78] to-[#2B7A78] text-white h-12 w-32 sm:h-14 sm:w-44 rounded-full p-1 text-sm sm:text-lg font-semibold flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:from-[#012236] hover:to-[#175255]">
-              Hire Us
-              <span className="material-icons sm:ml-2 ml-1 text-xl sm:text-2xl">arrow_forward</span>
-            </button>
-            <button className="border-2 border-white text-white h-12 w-32 sm:h-14 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 sm:w-44 rounded-full text-sm sm:text-lg font-semibold flex items-center justify-center transition-colors duration-300 hover:border-[#2B7A78] hover:text-[#2B7A78]">
-              <span>Contact Us</span>
-              <span className="material-icons ml-2 text-xl sm:text-2xl">arrow_forward</span>
-            </button>
-          </div>
+          <div className="flex flex-wrap space-x-4 mt-10 pt-8 sm:pt-2">
+  <a href="/Careers" className="bg-gradient-to-r from-[#2B7A78] to-[#2B7A78] text-white h-12 w-32 sm:h-14 sm:w-44 rounded-full p-1 text-sm sm:text-lg font-semibold flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:from-[#012236] hover:to-[#175255]">
+    Hire Us
+    <span className="material-icons sm:ml-2 ml-1 text-xl sm:text-2xl">arrow_forward</span>
+  </a>
+  <a href="/ContactUs" className="border-2 border-white text-white h-12 w-32 sm:h-14 sm:w-44 rounded-full text-sm sm:text-lg font-semibold flex items-center justify-center transition-colors duration-300 hover:border-[#2B7A78] hover:text-[#2B7A78]">
+    <span>Contact Us</span>
+    <span className="material-icons ml-2 text-xl sm:text-2xl">arrow_forward</span>
+  </a>
+</div>
+
           <div className="text-rotate-circle absolute text-white hidden lg:block xl:block xl:left-[130%] lg:left-[112%] md:left-[110%] sm:left-[90%] left-[100%] lg:top-24 xl:top-40  md:top-32 sm:top-28 top-20 justify-center items-center">
   <div className="box-circle-round  flex justify-center items-center rounded-full w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-52 lg:h-52">
     <a

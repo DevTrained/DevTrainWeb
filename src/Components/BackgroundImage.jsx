@@ -6,7 +6,7 @@ const BackgroundImage = () => {
   // Section Data
   const sections = {
     'Our History': {
-      content:  `The idea behind creating AAMAX was to expand the parent company’s services and capabilities by incorporating new and innovative technologies, particularly in the field of web application development.`,
+      content:  `The idea behind creating Devtrain was to expand the parent company’s services and capabilities by incorporating new and innovative technologies, particularly in the field of web application development.`,
       progress: 90,
     },
     Vision: {
@@ -27,7 +27,7 @@ const BackgroundImage = () => {
   };
 
   return (
-    <div className="relative font-poppins">
+    <div className="relative font-poppins overflow-x-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -42,21 +42,20 @@ const BackgroundImage = () => {
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
       {/* Main Content */}
-      <div className="relative container mx-auto py-20 px-4 text-white">
+      <div className="relative  mx-auto py-20 px-4 text-white">
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">Welcome to Our Journey</h1>
+          <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg">Welcome to Our Journey</h1>
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center space-x-8 mb-12">
+        <div className="flex  justify-center flex-col sm:flex-row lg:flex-row  px-3 space-y-4 sm:space-y-0 sm:space-x-4 lg:pace-x-8 ">
           {Object.keys(sections).map((section) => (
             <button
               key={section}
               onClick={() => setActiveSection(section)}
-              className={`py-2 px-6  text-lg font-semibold rounded-md transition-all ${
-                activeSection === section
-                  ? 'bg-[#089084] text-white'
-                  : 'bg-gray-700 hover:bg-[#089084]'
+              className={`py-2 px-6  text-lg font-semibold rounded-md transition-all ${activeSection === section
+                ? 'bg-transparent border-2 border-[#089084] text-[#089084]'
+                : 'bg-transparent border-2 border-white hover:border-[#089084] hover:text-[#089084]'
               }`}
             >
               {section}
@@ -65,18 +64,18 @@ const BackgroundImage = () => {
         </div>
 
         {/* Active Section Content */}
-        <div className="flex flex-col  md:flex-row items-center md:items-start gap-8">
+        <div className="flex px-2 sm:px-0 flex-col md:flex-row sm:items-start md:items-start gap-1  md:space-x-12 md:pt-8  ">
           {/* Left Side: Logo or Image */}
           <div className="w-full md:w-1/3">
             <img
               src="/Assets/Images/i1.png"
-              alt="AAMAX Logo"
-              className="rounded-lg shadow-lg"
+              alt="Devtrain-Logo"
+              className="rounded-lg  h-28 sm:h-[44vh] md:h-[33vh] lg:h-[44vh] object-cover"
             />
           </div>
 
           {/* Right Side: Content and Progress Bar */}
-          <div className="w-full md:w-2/3 bg-black bg-opacity-70 p-6 rounded-lg shadow-md">
+          <div className="w-full md:w-2/3  bg-black bg-opacity-70 p-6 md:p-4 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">{activeSection}</h2>
             <p className="text-lg mb-6">{sections[activeSection].content}</p>
 

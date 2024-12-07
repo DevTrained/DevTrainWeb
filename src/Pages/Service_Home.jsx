@@ -7,6 +7,7 @@ import MarqueeSection from '../Components/MarqueeSection'
 import AnimatedSection from '../Components/Section_We'
 import VerifiedBySection from '../Components/VerifiedBySection'
 import YourCompany from '../Components/YourCompany'
+import Industries_We_Deals from '../Components/Industries_We_Deals'
 
 
 const Service_Home = () => {
@@ -15,9 +16,9 @@ const Service_Home = () => {
 <ServiceBanner/>
 <Section1_Banner/>
 <MarqueeSection/>
+<Industries_We_Deals/>
 <VerifiedBySection/>
 <YourCompany/>
-{/* <YourCompany/> */}
 </>  )
 }
 

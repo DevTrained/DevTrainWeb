@@ -13,7 +13,7 @@ const cardData = [
   { title: "Non-Profit Organizations Sector", icon:<img src="/Assets/Images/Industry_Icon_8.webp" alt="Cybersecurity" /> },
 ];
 
-const Section1_SimplifiedBanner = () => {
+const Industries_We_Deals = () => {
   return (
     <div 
       className="container-fluid mx-auto p-10 bg-cover bg-center bg-[#012236] font-poppins" 
@@ -23,7 +23,7 @@ const Section1_SimplifiedBanner = () => {
   Industries
   <span className="mr-1"></span> 
   <span className="heart-container">
-    <FaRocket className="heart-icon bounce text-6xl text-[#ffd272] ml-2" /> 
+    <FaRocket className="heart-icon bounce text-6xl text-[#f7ab0a] ml-2" /> 
   </span>
   <span className="ml-2">
   We DEAL
@@ -52,4 +52,4 @@ const Section1_SimplifiedBanner = () => {
   );
 };
 
-export default Section1_SimplifiedBanner;
+export default Industries_We_Deals;

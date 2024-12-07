@@ -53,23 +53,21 @@ const Footer = () => {
             </div>
 
             {/* Contact and Newsletter */}
-            <div className="flex flex-col  sm:items-start  md:w-1/3  md:mt-12 xl:mt-20">
-              <h3 className="text-xl lg:text-2xl font-bold mb-4">Contacts</h3>
+            <div className="flex flex-col sm:items-start md:w-1/3 md:mt-12 xl:mt-20">
+              <h3 className="text-xl lg:text-2xl font-bold mb-4">Contact Us</h3>
               <p className="text-sm md:text-base lg:text-lg mb-4">
-                Enter your email address to register for our newsletter subscription.
+                Have questions or need help? Feel free to reach out to us at any time.
               </p>
-              <div className="flex flex-col   md:flex-col items-center w-full">
-                <input
-                  className="h-12 w-full md:full border border-gray-300 px-4 rounded-md mb-2 md:mb-0"
-                  type="email"
-                  placeholder="Your email"
-                />
-                <button className="bg-blue-950 w-full  text-white h-12 px-6 rounded-md flex items-center justify-center mt-2 md:mt-2 ">
-                  Subscribe
+              <div className="flex flex-col md:flex-col items-center w-full">
+                <Link
+                  to="/ContactUs"
+                  className="bg-blue-950 w-full text-white h-12 px-6 rounded-md flex items-center justify-center mt-2 md:mt-2 hover:bg-blue-800 transition"
+                >
+                  Contact Us
                   <span className="material-icons ml-1">arrow_forward</span>
-                </button>
+                </Link>
               </div>
-              <div className="flex space-x-4 justify-center  md:justify-start mt-4">
+              <div className="flex space-x-4 justify-center md:justify-start mt-4">
                 <a href="#" className="text-blue-600 hover:text-blue-800"><i className="fab fa-facebook-f text-2xl"></i></a>
                 <a href="#" className="text-pink-500 hover:text-pink-700"><i className="fab fa-instagram text-2xl"></i></a>
                 <a href="#" className="text-blue-700 hover:text-blue-900"><i className="fab fa-linkedin-in text-2xl"></i></a>
@@ -79,6 +77,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
 
         {/* Footer Bottom */}
         <div className=" py-4 mt-8 lg:mt-20 md:mt-12 xl:mt-32 ">

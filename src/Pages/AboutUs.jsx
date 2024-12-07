@@ -13,7 +13,7 @@ const AboutUs = () => {
    <AboutUsBanner/>
    <AboutUsSection1/> 
    <BackgroundImage/>
-   <TeamSection/>
+   {/* <TeamSection/> */}
    <MarqueeSection/>
     </>
   );

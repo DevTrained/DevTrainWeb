@@ -77,7 +77,7 @@ const HomeSection = () => {
         <div className=' w-full ' >
         <h1 className="text-3xl ml-2 sm:ml-6  md:ml-0 lg:ml-0 md:text-3xl lg:text-4xl xl:text-4xl  xl:ml-0 sm:text-4xl font-bold md:text-left" data-aos="fade-up">
           Discover the best IT <br />
-          <span className="relative mt-2 block"> <span className='text-[#089084]'  >strategy For Your Business</span>  <span className="text-[#089084]"></span></span>
+          <span className="relative mt-2 block"> <span className='text-[#089084]'  >Strategy For Your Business</span>  <span className="text-[#089084]"></span></span>
          
         </h1>
         </div>
@@ -135,11 +135,13 @@ const HomeSection = () => {
 
         {/* Hire Us Button */}
         <div className="flex pt-0 sm:pt-4 lg:ml-36 py-10 items-center ">
-          <button className="bg-[#089084] text-white h-12 w-32 sm:h-14 sm:w-44 lg:w-80  rounded-full p-1 text-sm sm:text-lg font-semibold flex items-center justify-center ">
-            Hire Us
-            <span className="material-icons sm:ml-2 ml-1 text-xl sm:text-2xl">arrow_forward</span>
-          </button>
+         
+          <a href="/Careers" className=" text-white h-12 w-32 sm:h-14 sm:w-44 lg:w-80    bg-gradient-to-r  from-[#2B7A78] to-[#2B7A78]  rounded-full p-1 text-sm sm:text-lg font-semibold flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:from-[#012236] hover:to-[#175255]">
+    Hire Us
+    <span className="material-icons sm:ml-2 ml-1 text-xl sm:text-2xl">arrow_forward</span>
+  </a>
         </div>
+        
       </div>
     </div>
       

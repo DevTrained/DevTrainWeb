@@ -39,7 +39,7 @@ const GreenEats = () => {
       </nav>
       
       {/* Main Header Content */}
-      <h1 className="text-2xl md:text-3xl font-semibold relative">GreenEats</h1>
+      <h1 className="text-2xl md:text-3xl font-semibold relative">Eatzone</h1>
     </div>
   </header>
       {/* Section 1: Top Section */}
@@ -47,7 +47,7 @@ const GreenEats = () => {
         <div className="flex items-center text-left gap-4">
           <div className="w-[6px] bg-[#089084]" style={{ height: '4em' }}></div>
           <h1 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-[#012236] leading-tight">
-            Revolutionizing Food Delivery with GreenEats
+            Revolutionizing Food Delivery with Eatzone
           </h1>
         </div>
       </div>
@@ -61,10 +61,12 @@ const GreenEats = () => {
           </h2>
           <br />
           <h3 className="text-2xl md:text-3xl lg:text-6xl font-semibold mb-4 text-[#012236]">
-            GreenEats App
+            Eatzone App
+            
           </h3>
           <p className="text-md sm:text-md md:text-base lg:text-lg xl:max-w-lg sm:w-full md:max-w-lg lg:max-w-lg">
-            GreenEats is an innovative food delivery platform that aims to offer fresh, healthy meals delivered right to your door. Featuring a wide range of organic, plant-based options, GreenEats ensures you enjoy delicious and nutritious food with ease.
+            Eatzone is an innovative food delivery platform that aims to offer fresh, healthy meals delivered right to your door. Featuring a wide range of organic, plant-based options, Eatzone
+             ensures you enjoy delicious and nutritious food with ease.
           </p>
         </div>
 
