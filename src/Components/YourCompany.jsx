@@ -17,7 +17,7 @@ const YourCompany = () => {
 
         {/* Sliding Rounded Arrow Div with Link */}
         <motion.div
-          className="flex items-center ml-20 justify-center w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full bg-[#F7AB0A] transition-all duration-300"
+          className="flex items-center ml-2 sm:ml-8 justify-center w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full bg-[#F7AB0A] transition-all duration-300"
           initial={{ x: -100 }}  // Start from left
           animate={{ x: 0 }}     // Slide to center
           transition={{

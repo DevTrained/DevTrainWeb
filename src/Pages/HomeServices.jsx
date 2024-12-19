@@ -90,7 +90,7 @@ const HomeServices = () => {
           <div className="text-4xl sm:text-4xl md:text-6xl font-bold mb-8 text-white our-services-heading">
             Our
           </div>
-          <div className="mt-0 hidden sm:block">
+          <div className="mt-0 ">
             <div className="flex flex-row ml-4 top-0 justify-center items-center gap-4">
             <div className="h-12 flex justify-center">
                 <div className="w-0.5 h-12 bg-[#F7AB0A] absolute"></div>
