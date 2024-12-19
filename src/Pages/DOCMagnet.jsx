@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from "react-helmet-async"; 
 
   const DOCMagnet = () => {
     
@@ -26,8 +26,18 @@ import { Link } from 'react-router-dom';
 
     return (
       
-      <div className="w-full text-left font-poppins  overflow-hiddeny">
+      <div className="w-full text-left font-poppins  overflow-hidden">
+         <Helmet>
+        <title>DOCMagnet - Revolutionizing Healthcare Communication</title>
+        <meta name="description" content="The Doctor-Patient Mobile App and Web Portal is an innovative platform designed to enhance healthcare communication by enabling seamless interactions between patients, doctors, and medical staff." />
+        <meta name="keywords" content="DOCMagnet, healthcare communication, mobile app, doctor-patient interaction, medical records, prescription management" />
+        <meta property="og:title" content="DOCMagnet - Revolutionizing Healthcare Communication" />
+        <meta property="og:description" content="The Doctor-Patient Mobile App and Web Portal is an innovative platform designed to enhance healthcare communication by enabling seamless interactions between patients, doctors, and medical staff." />
+        <meta property="og:image" content="/Assets/Images/DOCMagnet1.jpg" />
+        <meta property="og:url" content="your-website-url-here" />
+      </Helmet>
         {/* header  */}
+
         <header
     className="relative bg-cover bg-center py-10 md:py-14 text-center text-white font-poppins"
     style={{ backgroundImage: 'url("/Public/Assets/Images/PagesBanner.jpg")' }}

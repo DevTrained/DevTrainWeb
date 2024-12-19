@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async"; 
 
 const CoinCraft = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,6 +24,17 @@ const CoinCraft = () => {
 
   return (
     <>
+     <Helmet>
+        <title>CoinCraft - Cryptocurrency Management Simplified</title>
+        <meta name="description" content="Discover CoinCraft, an innovative app for cryptocurrency management. Track, trade, and analyze your portfolio with real-time insights and secure transactions." />
+        <meta name="keywords" content="CoinCraft, Cryptocurrency, Crypto Trading, Portfolio Management, Secure Transactions, Real-Time Insights" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="CoinCraft - Cryptocurrency Management Simplified" />
+        <meta property="og:description" content="Transform the way you manage cryptocurrency with CoinCraft. Real-time insights, secure transactions, and portfolio analytics in one app." />
+        <meta property="og:image" content="/Assets/Images/CoinCraft.png" />
+        <meta property="og:url" content="https://yourwebsite.com/coin-craft" />
+        <meta property="og:type" content="website" />
+      </Helmet>
     
     <div className="w-full text-justify font-poppins overflow-hidden">
            {/* header  */}

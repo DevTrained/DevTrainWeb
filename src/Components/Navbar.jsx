@@ -93,7 +93,7 @@ function Navbar() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`md:hidden transition-all duration-500 ease-in-out pl-2 sm:pl-5 z-40  overflow-hidden ${
+                    className={`md:hidden transition-all duration-500 ease-in-out pl-2 sm:pl-5 z-40 space-y-2  overflow-hidden ${
                         isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
                     } absolute h-screen top-20 left-0 right-0 bg-[#012236]`}
                 >
@@ -106,7 +106,7 @@ function Navbar() {
                             {item.title}
                         </Link>
                     ))}
-
+                    
                     {/* Email Section */}
                     <div className="text-white text-center mx-4 mt-6">
                         <p className="text-lg flex items-center justify-start gap-2">

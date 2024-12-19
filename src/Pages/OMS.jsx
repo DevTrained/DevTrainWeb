@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const OrderManagement = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,6 +25,35 @@ const OrderManagement = () => {
 
   return (
     <div className="w-full text-left font-poppins  overflow-hidden">
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Order Management System - Revolutionizing Business Operations</title>
+        <meta
+          name="description"
+          content="Discover how our Order Management System streamlines operations, enhances efficiency, and improves customer satisfaction. Learn more today!"
+        />
+        <meta name="keywords" content="Order Management System, OMS, Business Efficiency, Real-Time Tracking, Payment Integration" />
+        <meta name="author" content="YourCompanyName" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Order Management System - Revolutionizing Business Operations" />
+        <meta
+          property="og:description"
+          content="Simplify order processing, manage inventory, and provide seamless customer service with our OMS."
+        />
+        <meta property="og:image" content="/Assets/Images/OrderManagementMockup.png" />
+        <meta property="og:url" content="https://yourwebsite.com/order-management-system" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Order Management System - Revolutionizing Business Operations" />
+        <meta
+          name="twitter:description"
+          content="Efficiently track orders, manage payments, and streamline operations with our Order Management System."
+        />
+        <meta name="twitter:image" content="/Assets/Images/OrderManagementMockup.png" />
+      </Helmet>
          {/* header  */}
          <header
     className="relative bg-cover bg-center py-10 md:py-14 text-center text-white font-poppins"

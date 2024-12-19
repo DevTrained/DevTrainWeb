@@ -55,10 +55,10 @@ const ReviewCard = ({ name, username, body, img, rating }) => (
     {/* <div className="flex flex-col md:flex-row items-center md:items-start p-4 w-full bg-[#3aaf9a] shadow-lg rounded-lg"> */}
       {/* <img src={img} alt={name} className="w-16 h-16 rounded-full mb-4 md:mb-0 md:mr-4" /> */}
     <div className="text-center md:text-left flex-1 w-96 h-[30vh]">
-      <h4 className="text-lg font-semibold">{name}</h4>
-          <p className="text-sm text-white mb-1 ">{username}</p>
+      <h4 className="text-lg text-white font-semibold">{name}</h4>
+          <p className="text-sm text-[#f7ab0a] mb-1 ">{username}</p>
           
-      <div className="flex justify-center md:justify-start mb-2 text-yellow-400">
+      <div className="flex justify-center md:justify-start mb-2 text-white">
         {[...Array(5)].map((_, i) => (
           <FaStar key={i} className={i < rating ? '' : 'text-gray-300'} />
         ))}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";  // Import Helmet for SEO
+
 
 const GreenEats = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,9 +23,18 @@ const GreenEats = () => {
   const goToPrevious = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
+
   return (
     <div className="w-full text-justify font-poppins overflow-x-hidden">
-       {/* header  */}
+      <Helmet>
+        <title>GreenEats - Revolutionizing Food Delivery</title>
+        <meta name="description" content="GreenEats is a food delivery app that offers healthy, organic meal options with real-time order tracking and reliable delivery." />
+        <meta name="keywords" content="GreenEats, food delivery, healthy meals, sustainable dining, organic food, meal tracking" />
+        <meta property="og:title" content="GreenEats - Revolutionizing Food Delivery" />
+        <meta property="og:description" content="GreenEats is a food delivery app that offers healthy, organic meal options with real-time order tracking and reliable delivery." />
+        <meta property="og:image" content="/Assets/Images/mainpic1GreenEats.png" />
+        <meta property="og:url" content="https://yourwebsite.com/greeneats" />
+      </Helmet>
        <header
     className="relative bg-cover bg-center py-10 md:py-14 text-center text-white font-poppins"
     style={{ backgroundImage: 'url("/Public/Assets/Images/PagesBanner.jpg")' }}

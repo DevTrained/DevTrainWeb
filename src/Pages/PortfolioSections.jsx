@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { FaRocket } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
+import { Helmet } from 'react-helmet-async';
+
+
 
 
 const PortfolioSections = () => {
@@ -46,6 +48,32 @@ const PortfolioSections = () => {
   return (
     <>
       {/* Heading with Scroll Animation and Icon */}
+      <Helmet>
+              <title>Portfolio | Your Company</title>
+              <meta
+                name="description"
+                content="Discover our portfolio of innovative apps and platforms designed to transform your ideas into reality."
+              />
+              <meta
+                name="keywords"
+                content="Portfolio, Crypto App, Order Management, Food Delivery, Taxi App, DocMagnet, Digital Transformation"
+              />
+              <meta name="author" content="Your Company Name" />
+              <meta property="og:title" content="Portfolio | Your Company" />
+              <meta
+                property="og:description"
+                content="Explore our diverse portfolio of cutting-edge applications and platforms."
+              />
+              <meta property="og:image" content="/Assets/Images/Protfolio-Banner.png" />
+              <meta property="og:url" content="https://yourwebsite.com/portfolio" />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content="Portfolio | Your Company" />
+              <meta
+                name="twitter:description"
+                content="Transforming your ideas into reality through innovation and technology."
+              />
+              <meta name="twitter:image" content="/Assets/Images/Protfolio-Banner.png" />
+            </Helmet>
       <motion.div
         className="flex justify-center items-center bg-gradient-to-r from-[#175255] to-[#012236] py-4 sm:py-6 md:py-8"
         initial={{ opacity: 0, y: 50 }}
