@@ -27,7 +27,7 @@ const Devtrain_Index = () => {
       </Helmet>
       
       <HomeBanner />
-      <HomeSection />
+      {/* <HomeSection /> */}
       <HomeServices />
       <VerifiedBySection />
       <PortfolioSections />

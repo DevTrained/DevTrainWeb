@@ -148,61 +148,60 @@ const ServiceCards = () => {
 
   return (
     <>
-    <div className="bg-[#012236] h-28 p-4 font-poppins">
-      <div className="flex items-center justify-center gap-2">
+  <div className="bg-[#012236] h-28 p-4 font-poppins">
+    <div className="flex items-center justify-center gap-2">
       <motion.div
-          className="mx-3 text-[#f7ab0a]"
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1, rotate: 360 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <FaServer className="text-4xl sm:text-5xl md:text-6xl" />
-        </motion.div>
+        className="mx-3 text-[#f7ab0a]"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1, rotate: 360 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        <FaServer className="text-4xl sm:text-5xl md:text-6xl" />
+      </motion.div>
       <motion.h2
-          className="text-white font-poppins text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+        className="text-white font-poppins  text-3xl  sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        Stack and Technologies
+      </motion.h2>
+    </div>
+  </div>
+  <div className="mx-auto px-4 py-8 bg-gray-100">
+    <div className="mb-6 pt-2 flex flex-wrap justify-center gap-4">
+      {Object.keys(servicesData).map((category) => (
+        <button
+          key={category}
+          onClick={() => setSelectedCategory(category)}
+          className={`px-4 py-2 text-white font-semibold transition-all duration-300 ${
+            selectedCategory === category ? "bg-[#089084] scale-105" : "bg-[#012236]"
+          } rounded-lg hover:scale-105`}
         >
-          Stack and Technologies
-        </motion.h2>
-      </div>
+          {category}
+        </button>
+      ))}
     </div>
-    <div className="mx-auto px-4 py-8 bg-gray-100">
-  
-      <div className="mb-6 pt-2 flex flex-wrap justify-center gap-4">
-        {Object.keys(servicesData).map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 text-white font-semibold transition-all duration-300 ${
-              selectedCategory === category ? "bg-[#089084] scale-105" : "bg-[#012236]"
-            } rounded-lg hover:scale-105`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-  
-      {/* Services Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-        {servicesData[selectedCategory].map((service, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col items-center justify-center p-4 border rounded-lg shadow-lg bg-white hover:shadow-xl transition-all duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-          >
-            <div className="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full">
-              {service.icon}
-            </div>
-            <span className="text-sm font-medium mt-2 text-center">{service.name}</span>
-          </motion.div>
-        ))}
-      </div>
+
+    {/* Services Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+      {servicesData[selectedCategory].map((service, index) => (
+        <motion.div
+          key={index}
+          className="flex flex-col items-center justify-center p-4 border rounded-lg shadow-lg bg-white hover:shadow-xl transition-all duration-300"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1, delay: index * 0.01 }}
+        >
+          <div className="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full">
+            {service.icon}
+          </div>
+          <span className="text-sm font-medium mt-2 text-center">{service.name}</span>
+        </motion.div>
+      ))}
     </div>
-  </>
+  </div>
+</>
   
   );
 };

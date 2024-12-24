@@ -9,50 +9,64 @@ const Team = () => {
       'John Doe is the visionary founder of DevTrain. With over a decade of experience in the tech industry, John is committed to empowering the next generation of tech talent and driving innovation.',
     links: {
       linkedin: '#',
-      instagram: '#',
-      facebook: '#',
     },
   };
 
   const teamMembers = [
     {
-      name: 'Muneeb',
+      name: 'Muneeb Ali Muzaffar',
       role: 'CTO & Co-Founder',
       image: '/Assets/Images/Muneeb-Devtrain.png',
       links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
+        linkedin: 'https://www.linkedin.com/in/muneeb-ali-muzaffar-043298109',
       },
     },
     {
-      name: 'Zeeshan',
+      name: 'Zeeshan Akram',
       role: 'Director',
-      image: '/Assets/Images/Zeeshan-Akram-Dev.png',
+      image: '/Assets/Images/Zeeshan-Devtrain.png',
       links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
+        linkedin: 'https://www.linkedin.com/in/zeeshanakrampm/',
       },
     },
     {
-      name: 'Asif',
+      name: 'Asif Farooq',
       role: 'Director',
       image: '/Assets/Images/Asif-Devtrain.png',
       links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
+        linkedin: 'https://linkedin.com/in/asif-farooq-32a11090',
       },
     },
     {
-      name: 'Usman',
+      name: 'Muhammad Aswab',
+      role: 'Full Stack Developer',
+      image: '/Assets/Images/Aswab-Devtrain.png',
+      links: {
+        linkedin: 'https://linkedin.com/in/muhammad-aswab-9b2283247',
+      },
+    },
+    {
+      name: 'Zain Khurram',
+      role: 'Full Stack Developer',
+      image: '/Assets/Images/Zain-Devtrain.png',
+      links: {
+        linkedin: 'https://linkedin.com/in/zain-khurram-163788308',
+      },
+    },
+    {
+      name: 'Muhammad Shaban Nazir',
+      role: 'Wordpress/Full Stack Developer',
+      image: '/Assets/Images/Shaban-Devtrain.png',
+      links: {
+        linkedin: 'https://linkedin.com/in/muhammad-shaban-b05321255',
+      },
+    },
+    {
+      name: 'Usman Shakeel',
       role: 'UI/UX Designer',
       image: '/Assets/Images/Usman-Devtrain.png',
       links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
+        linkedin: 'https://linkedin.com/in/mian-usman-3804a9308',
       },
     },
     {
@@ -61,48 +75,14 @@ const Team = () => {
       image: '/Assets/Images/Elisha-Devtrain.png',
       links: {
         linkedin: '#',
-        instagram: '#',
-        facebook: '#',
       },
     },
     {
-      name: 'Umar',
+      name: 'Umar Aftab',
       role: 'Digital Marketer',
       image: '/Assets/Images/Umar-Devtrain.png',
       links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
-      },
-    },
-    {
-      name: 'Aswab',
-      role: 'Web Developer',
-      image: '/Assets/Images/Aswab-Devtrain.png',
-      links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
-      },
-    },
-    {
-      name: 'Zain',
-      role: 'Web Developer',
-      image: '/Assets/Images/Zain-Devtrain.png',
-      links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
-      },
-    },
-    {
-      name: 'Shaban',
-      role: 'Wordpress Developer',
-      image: '/Assets/Images/Shaban-Devtrain.png',
-      links: {
-        linkedin: '#',
-        instagram: '#',
-        facebook: '#',
+        linkedin: 'https://linkedin.com/in/umar-aftab-a82a9029b',
       },
     },
   ];
@@ -159,15 +139,14 @@ const Team = () => {
       </h2>
 
       {/* Team Cards */}
-      <div className="flex flex-wrap gap-12 px-4  lg:px-16">
+      <div className="flex flex-wrap gap-12 justify-center lg:px-16">
         {teamMembers.map((member, index) => (
-          <div key={index} className={`relative w-[30%] h-[30%] bg-${member.role === 'Director' ? '[#089084]' : '[#089084]'} bg-${member.role === 'Director' ? '[#089084f]' : '[#089084]'} shadow-lg overflow-hidden rounded-full group`}
-          >
+          <div key={index} className={`relative w-[50%] h-[50%] sm:w-[35%] md:w-[25%] md:h-[25%] lg:w-[28%] lg:h-[28%] xl:w-[30%] xl:h-[30%] sm:h-[35%] bg-${member.role === 'Director' ? '[#089084]' : '[#089084]'} bg-${member.role === 'Director' ? '[#089084f]' : '[#089084]'} shadow-lg overflow-hidden rounded-full group`}>
             {/* Front Side: Member Image */}
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-full object-cover  rounded-full"
+              className="w-full h-full object-cover rounded-full"
             />
 
             {/* Hover Overlay: Back Side with Data */}
@@ -179,12 +158,6 @@ const Team = () => {
                 <div className="flex justify-center space-x-2 mt-2">
                   <a href={member.links.linkedin} className="text-white hover:text-gray-300">
                     <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a href={member.links.instagram} className="text-white hover:text-gray-300">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href={member.links.facebook} className="text-white hover:text-gray-300">
-                    <i className="fab fa-facebook"></i>
                   </a>
                 </div>
               </div>

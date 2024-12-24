@@ -1,4 +1,3 @@
-// src/components/FAQPage.js
 import React, { useState, useEffect, useRef } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 
@@ -48,8 +47,8 @@ const Faq = () => {
       answer: "Yes, we offer comprehensive services for digital agencies, including development and consulting.",
     },
     {
-      question: "What types of staff augmentation  services do you provide?",
-      answer: "We provide scalable IT sipport staff according to the need of your business.",
+      question: "What types of staff augmentation services do you provide?",
+      answer: "We provide scalable IT support staff according to the needs of your business.",
     },
   ];
 
@@ -66,19 +65,19 @@ const Faq = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="flex flex-col md:flex-row w-full mt-2  sm:mt-4   md:mt-4 lg:mt-10 xl:mt-10 2xl:mt-10">
+      <div className="flex flex-col md:flex-row w-full mt-2 sm:mt-4 md:mt-4 lg:mt-10 xl:mt-10 2xl:mt-10">
         {/* Left Section with Image */}
-        <div className="relative h-[50vh] md:h-[60vh]   lg:h-auto w-full md:w-1/2 lg:w-1/2 flex items-center justify-center p-4 md:p-6">
+        <div className="relative h-[50vh] md:h-[60vh] lg:h-auto w-full md:w-1/2 lg:w-1/2 flex items-center justify-center p-4 md:p-6">
           <img
-            className="h-full w-full max-w-md md:max-w-xl  sm:max-w-lg lg:max-w-lg  object-cover border-2 rounded-2xl border-black"
+            className="h-full w-full max-w-md md:max-w-xl sm:max-w-lg lg:max-w-lg object-cover border-2 rounded-2xl border-black"
             src="/Assets/Images/project6.png"
             alt=""
           />
         </div>
 
         {/* Right Section with FAQ */}
-        <div className="flex flex-col w-full md:w-1/2 p-4 sm:p-8  md:p-4 lg:p-4">
-          <h2 className="text-lg sm:hidden block md:block lg:block xl:block md:text-2xl  lg:text-4xl font-bold mb-4  lg:mb-10 text-center ">
+        <div className="flex flex-col w-full md:w-1/2 p-4 sm:p-8 md:p-4 lg:p-4">
+          <h2 className="text-lg sm:hidden block md:block lg:block xl:block md:text-2xl lg:text-4xl font-bold mb-4 lg:mb-10 text-center">
             Have Any Questions? Find Answers Below
           </h2>
 
@@ -87,31 +86,26 @@ const Faq = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`border rounded-lg shadow-lg p-4 xl:p-6 md:p-4  w-full mx-auto md:max-w-[95%] lg:max-w-none transition-all duration-300 ${
+                className={`border rounded-lg shadow-lg p-4 xl:p-6 md:p-4 w-full mx-auto md:max-w-[95%] lg:max-w-none transition-all duration-300 ${
                   openIndex === index ? 'opacity-100 blur-none' : 'opacity-70 blur-sm'
                 } ${openIndex !== null && openIndex !== index ? 'cursor-not-allowed' : ''}`}
                 style={{
                   filter: openIndex !== null && openIndex !== index ? 'blur(4px)' : 'none',
                 }}
               >
-               <div
-  className="flex justify-between items-center cursor-pointer "
-  onClick={() => toggleFAQ(index)}
->
-  <h3 className="text-base md:text-lg lg:text-xl font-semibold">{faq.question}</h3>
-  {openIndex === index ? (
-    <FaMinus className="text-xl sm:text-2xl md:text-2xl text-gray-600" />
-  ) : (
-    <FaPlus className="text-base  sm:text-2xl md:text-2xl text-gray-600" />
-  )}
-</div>
+                <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleFAQ(index)}>
+                  <h3 className="text-base md:text-lg lg:text-xl font-semibold">{faq.question}</h3>
+                  <div className="flex items-center">
+                    {openIndex === index ? (
+                      <FaMinus className="text-xl sm:text-2xl md:text-2xl text-gray-600" />
+                    ) : (
+                      <FaPlus className="text-base sm:text-2xl md:text-2xl text-gray-600" />
+                    )}
+                  </div>
+                </div>
 
                 {/* FAQ Answer with Smooth Transition */}
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-40 mt-2' : 'max-h-0'
-                  }`}
-                >
+                <div className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-40 mt-2' : 'max-h-0'}`}>
                   <p className="text-sm md:text-base lg:text-lg text-gray-600 mt-2">{faq.answer}</p>
                 </div>
               </div>

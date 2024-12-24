@@ -72,7 +72,7 @@ function Navbar() {
                 {/* Mobile Hamburger Icon */}
                 <div className="md:hidden flex items-center z-40">
                     <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
-                        <i className={`fas ${isOpen ? "fa-times text-3xl" : "fa-bars"} text-2xl`} />
+                        <i className={`fas ${isOpen ? "fa-times text-4xl" : "fa-bars"} text-3xl`} />
                     </button>
                 </div>
 
