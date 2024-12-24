@@ -102,12 +102,12 @@ const Footer = () => {
       <style>{footerStyles}</style>
       <footer className="footer footer-wave bg-gray-200 text-black font-poppins">
       {/* <div className="absolute inset-0 bg-[#012236] opacity-20"></div> */}
-        <div className="px-6 sm:px-8 md:px-10 lg:px-7 xl:px-7" data-aos="fade-up">
+        <div className="px-6 sm:px-8 md:px-4 lg:px-7 xl:px-7" data-aos="fade-up">
           {/* Top section with logo and links */}
           <div className="flex flex-col md:flex-row md:justify-between lg:space-x-8">
             {/* Logo and description */}
             <div
-              className="flex flex-col items-center sm:items-start w-full md:w-1/3 text-center md:text-left lg:items-start lg:w-1/3 xl:w-1/4"
+              className=" flex flex-col items-center  sm:items-start  w-full md:w-1/3 text-center md:text-left lg:items-start lg:w-1/3 xl:w-1/4"
               data-aos="fade-up"
             >
               <img
@@ -115,20 +115,20 @@ const Footer = () => {
                 src="/Assets/Images/i2.png"
                 alt="DevTrain"
               />
-              <div className="w-full text-left flex item-start lg:px-4 lg:max-w-lg">
-                <div className="sm:text-lg md:text-left md:text-[1rem] lg:text-lg xl:text-[1.1rem]">
-                  <p className=" w-96" >
+              <div className="w-full flex sm:items-start md:items-start md:justify-start sm:justify-start text-center items-center justify-center ">
+                <div className="sm:text-lg  md:text-left md:text-[1rem] lg:text-md xl:text-[1rem]">
+                  <p className=" md:w-80  sm:pl-0  pl-0 " >
                   <strong> Tech Consultancy Solutions Trainings</strong> <br /> </p>
-                  <p className="w-80 text-center sm:text-left"  >
+                  <p className="w-80   text-center  sm:text-left pl-0 sm:pl-0"  >
                   Transform your business with Devtrain SMC Pvt Ltd. We offer custom software development, AWS cloud integration, Mobile/Web app development, 
                   LLM model training, and staff augmentation in USA, UK, USA, and Pakistan.</p>
               </div>
               </div>
-            </div>
+            </div> 
 
             {/* Navigation Links */}
             <div
-              className="flex flex-col sm:items-start md:pl-5 md:text-[1rem] md:w-32 mt-12 mb-8 lg:mb-0 xl:mt-16"
+              className="flex flex-col sm:items-start md:pl-8 md:text-[1rem] md:w-32 mt-12 mb-8 lg:mb-0 xl:mt-16"
               data-aos="fade-up"
             >
            <h3
@@ -204,7 +204,7 @@ const Footer = () => {
             >
               
               <h3
-  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold "
+  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold bg-red-500"
 >
   Sitemap
 </h3>
