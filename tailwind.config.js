@@ -24,7 +24,7 @@ export default {
         fadeInSlideRight: 'fadeInSlideRight 1s ease-in-out forwards',
         fadeInSlideLeft: 'fadeInSlideLeft 1s ease-in-out forwards',
         rotateText: 'rotateText 10s linear infinite',
-        spin: 'spin 10s linear infinite',
+        spin: 'spin 1s linear infinite',
         rotate: 'rotate 10s linear infinite',
         'beat-heart': 'beat-heart 1s ease-in-out infinite',
         gradientMove: 'gradientMove 3s infinite',
