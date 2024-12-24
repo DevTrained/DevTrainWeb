@@ -148,10 +148,10 @@ const ServiceCards = () => {
 
   return (
     <>
-  <div className="bg-[#012236] h-28 p-4 font-poppins">
-    <div className="flex items-center justify-center gap-2">
+  <div className="bg-[#012236] h-28  font-poppins">
+    <div className="flex  item-center justify-center pt-8 gap-2">
       <motion.div
-        className="mx-3 text-[#f7ab0a]"
+        className="mx-3  text-[#f7ab0a]"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1, rotate: 360 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
@@ -159,7 +159,8 @@ const ServiceCards = () => {
         <FaServer className="text-4xl sm:text-5xl md:text-6xl" />
       </motion.div>
       <motion.h2
-        className="text-white font-poppins  text-3xl  sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"
+        className="text-white font-poppins  text-2xl 
+        sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}

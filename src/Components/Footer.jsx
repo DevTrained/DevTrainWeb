@@ -119,7 +119,7 @@ const Footer = () => {
                 <div className="sm:text-lg md:text-left md:text-[1rem] lg:text-lg xl:text-[1.1rem]">
                   <p className=" w-96" >
                   <strong> Tech Consultancy Solutions Trainings</strong> <br /> </p>
-                  <p className="w-80"  >
+                  <p className="w-80 text-center sm:text-left"  >
                   Transform your business with Devtrain SMC Pvt Ltd. We offer custom software development, AWS cloud integration, Mobile/Web app development, 
                   LLM model training, and staff augmentation in USA, UK, USA, and Pakistan.</p>
               </div>
@@ -131,7 +131,11 @@ const Footer = () => {
               className="flex flex-col sm:items-start md:pl-5 md:text-[1rem] md:w-32 mt-12 mb-8 lg:mb-0 xl:mt-16"
               data-aos="fade-up"
             >
-              <h3 className="footer-heading text-xl lg:text-2xl md:text-xl font-bold "> Sitemap</h3>
+           <h3
+  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold bg-red-500"
+>
+  Services
+</h3>
               <div className="relative flex items-center ">
             {/* Vertical Line with Balls */}
             <div className="flex flex-row ml-4 top-0 gap-4">
@@ -151,8 +155,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-[#089084]">
-                    Services
+                  <Link href="#" className="hover:text-[#089084]">
+                    Blogs
                   </Link>
                 </li>
                 <li>
@@ -161,53 +165,79 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="/Trainings" className="hover:text-[#089084]">
+                <Link to="/Services" className="hover:text-[#089084]">
+                    Services
+                  </Link>
+                  
+                </li>
+                <li>
+                <Link to="/Trainings" className="hover:text-[#089084]">
                     Trainings
-                  </a>
+                  </Link>
+                 
                 </li>
                 <li>
-                  <a href="/Contactus" className="hover:text-[#089084]">
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a href="Aboutus" className="hover:text-[#089084]">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/Careers" className="hover:text-[#089084]">
+                  
+                  <Link to="/Careers" className="hover:text-[#089084]">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#089084]">
-                    Blogs
-                  </a>
+                
+                  <Link href="Aboutus" className="hover:text-[#089084]">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                <Link to="/Contactus" className="hover:text-[#089084]">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
 
             {/* Services */}
+           
             <div
-              className="flex flex-col   md:mt-12 md:pl-5 md:w-60 mb-8 xl:mt-16"
+              className="flex flex-col md:mt-12 md:pl-5 md:w-60 mb-8 xl:mt-16"
               data-aos="fade-up"
             >
               
-              <h3 className="footer-heading text-xl lg:text-2xl font-bold ">Services</h3>
+              <h3
+  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold "
+>
+  Sitemap
+</h3>
+             
               <div className="relative flex items-center ">
-            {/* Vertical Line with Balls */}
+            
             <div className="flex flex-row ml-4 top-0 gap-4">
-              {/* First Vertical Line with Ball */}
+              
               <div className="h-12 flex ml-20 justify-center rotate-90 relative">
-                {/* Line */}
+               
                 <div className="w-1 h-32 bg-[#F7AB0A] absolute"></div>
-                {/* Dot */}
+                
                 <div className="w-4 h-4 border-2 border-[#F7AB0A] bg-black rounded-full relative top-0 transform animate-move-down"></div>
               </div>
             </div>
           </div>
               <ul className="space-y-2 item-start xl:items-center sm:text-left">
+              <li>
+                  <a href="/WebApplication" className="hover:text-[#089084]">
+                    Wordpress
+                  </a>
+                </li>
+                <li>
+                  <a href="/ECommerce" className="hover:text-[#089084]">
+                    E-Commerce
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="/WebApplication" className="hover:text-[#089084]">
+                    Semantic SEO
+                  </a>
+                </li>
                 <li>
                   <a href="/AI_Consultancy" className="hover:text-[#089084]">
                     AI Consultancy
@@ -218,34 +248,21 @@ const Footer = () => {
                     Cloud Integration
                   </a>
                 </li>
-                <li>
-                  <a href="/MobileApplicationDevelopment" className="hover:text-[#089084]">
-                    Mobile Application Development
-                  </a>
-                </li>
+                
+               
                 <li>
                   <a href="/DigitalMarketing" className="hover:text-[#089084]">
                     Digital Marketing
                   </a>
                 </li>
                 <li>
-                  <a href="/ECommerce" className="hover:text-[#089084]">
-                    E-Commerce
+                  <a href="/MobileApplicationDevelopment" className="hover:text-[#089084]">
+                    Mobile App Development
                   </a>
                 </li>
                 <li>
                   <a href="/WebApplication" className="hover:text-[#089084]">
                     Web App Development
-                  </a>
-                </li>
-                <li>
-                  <a href="/WebApplication" className="hover:text-[#089084]">
-                    Wordpress
-                  </a>
-                </li>
-                <li>
-                  <a href="/WebApplication" className="hover:text-[#089084]">
-                    Semantic SEO
                   </a>
                 </li>
               </ul>
@@ -256,7 +273,12 @@ const Footer = () => {
               className=" flex-col md:flex-col md:hidden lg:block xl:block sm:block block sm:items-start md:w-1/3 md:mt-12 xl:mt-16"
               data-aos="fade-up"
             >
-              <h3 className="footer-heading text-xl lg:text-2xl font-bold ">Contact Us</h3>
+              <h3
+  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold bg-red-500"
+>
+  Contact Us
+</h3>
+
               <div className="relative flex items-center ">
             {/* Vertical Line with Balls */}
             <div className="flex flex-row ml-4 top-0 gap-4">

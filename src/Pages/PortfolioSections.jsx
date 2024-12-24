@@ -98,7 +98,7 @@ const PortfolioSections = () => {
       </motion.div>
 
       {/* Portfolio Sections */}
-      <div className="h-full w-full bg-[#e9e3d5] flex flex-col p-4 space-y-8 lg:space-y-18 overflow-x-hidden ">
+      <div className="h-full w-full bg-[#def2f1] flex flex-col p-4 space-y-8 lg:space-y-18 overflow-x-hidden ">
         {sections.map((section, index) => (
           <div
             key={index}

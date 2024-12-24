@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaRocket } from 'react-icons/fa'; // Import the rocket icon
 
 const ServiceBanner = () => {
+   
+   const [isLoaded, setIsLoaded] = useState(false);
+   const handleLoad = () => {
+    setIsLoaded(true); // Content is loaded
+  };
+
   return (
+    <>
+    {/* Loader */}
+    {!isLoaded && (
+      <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
+        <div className="w-12 h-12 border-4 border-t-transparent border-blue-500 rounded-full animate-spin"></div>
+      </div>
+    )}
     <div className="h-screen w-full relative overflow-hidden font-poppins">
       {/* Background Image */}
       <img
         className="h-full w-full object-cover"
         src="/Assets/Images/Service.jpg"
         alt="Service Banner"
+        onLoad={handleLoad} // Trigger handleLoad when the image is loaded
       />
 
       {/* Gradient Overlay from Left (Darker) to Right (Lighter) */}
@@ -55,6 +69,7 @@ const ServiceBanner = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

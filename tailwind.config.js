@@ -12,7 +12,12 @@ export default {
         poppins: ['Poppins', 'sans-serif'], // Adding Poppins as the default sans-serif font
       },
      
-
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
       animation: {
         'marquee-left-to-right': 'marqueeLeftToRight 15s linear infinite', // Left to Right animation
         'marquee-right-to-left': 'marqueeRightToLeft 15s linear infinite', // Right to Left animation
@@ -22,6 +27,7 @@ export default {
         spin: 'spin 10s linear infinite',
         rotate: 'rotate 10s linear infinite',
         'beat-heart': 'beat-heart 1s ease-in-out infinite',
+        gradientMove: 'gradientMove 3s infinite',
       },
       keyframes: {
         marqueeLeftToRight: {
@@ -47,6 +53,10 @@ export default {
         'beat-heart': {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.2)' },
+        },
+        gradientMove: {
+          '0%': { backgroundPosition: '0%' },
+          '100%': { backgroundPosition: '100%' },
         },
         
       }
