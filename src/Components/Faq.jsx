@@ -57,10 +57,11 @@ const Faq = () => {
       {/* Centered Heading at the Top */}
       <div className="flex flex-col items-center pt-10 sm:mb-0 mb-4">
         <div className="flex flex-row justify-center items-center space-x-2">
-          <div className="h-1 w-12 ml-6 sm:w-12 bg-[#089084]"></div>
-          <h1 className="text-lg sm:text-3xl md:text-3xl font-bold text-[#089084] text-center">
+          <div className="h-1 w-10  sm:w-12 bg-[#089084]"></div>
+          <h1 className="text-md sm:text-3xl md:text-3xl font-bold text-[#089084] text-center">
             FREQUENTLY ASKED QUESTIONS
           </h1>
+          <div className="h-1 w-10 sm:w-12 bg-[#089084]"></div>
         </div>
       </div>
 

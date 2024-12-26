@@ -38,15 +38,12 @@ const WordPress = () => {
         />
         <meta name="twitter:image" content="/Assets/Images/WordPress-Banner.png" />
       </Helmet>
-
-      <Navbar />
       <Banner_Wordpress />
       <WordPress_sec1 />
       <WordPress_sec2 />
       <MarqueeSection />
       <Section1_SimplifiedBanner />
       <Faq />
-      <Footer />
     </div>
   );
 };

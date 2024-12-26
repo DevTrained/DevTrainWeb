@@ -37,7 +37,7 @@ const ContactUs = () => {
 
       {/* Components */}
       <ContactBanner />
-      <ContactSection2 />
+      {/* <ContactSection2 /> */}
       <ContactSection1 />
     </>
   );

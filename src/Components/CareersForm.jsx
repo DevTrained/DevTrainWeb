@@ -256,7 +256,7 @@ const CareersForm = () => {
         <div className="md:col-span-2 text-center">
           <button
             type="submit"
-            className="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600"
+            className="bg-gradient-to-r from-[#2b7a78] to-[#175255] text-white py-2 px-6 rounded hover:from-[#012236] hover:to-[#012236] "
             disabled={isSubmitting}  // Disable button while submitting
           >
             {isSubmitting ? "Submitting..." : "Submit"}

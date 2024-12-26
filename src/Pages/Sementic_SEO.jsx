@@ -9,7 +9,7 @@ import Pricing_Sementic_seo from '../Components/Pricing_Sementic_seo';
 
 const Sementic_SEO = () => {
   return (
-    <div>
+    <div  className='overflow-hidden' >
       {/* React Helmet for Meta Optimization */}
       <Helmet>
         <title>Semantic SEO Services | Optimize Your Website</title>

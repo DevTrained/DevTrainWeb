@@ -12,7 +12,7 @@ const Banner_TechTrainning = () => {
     
     <div className="relative container mx-auto px-4">
       {/* Breadcrumb Navigation */}
-      <nav className="text-sm mb-3 text-gray-200 mt-[15%] sm:mt-[10%] relative">
+      <nav className="text-sm mb-3 text-gray-200 mt-[17%]  sm:mt-[12%] md:mt-[8%] lg:mt-[8%] xl:mt-[6%]  relative">
         <a href="/Services" className="hover:underline text-xl"><b>Our Services</b></a> / 
         <span className="ml-2 text-xl"><b>Tech Trainning</b></span>
       </nav>
@@ -20,7 +20,7 @@ const Banner_TechTrainning = () => {
       {/* Main Header Content */}
       <h1 className="text-2xl md:text-3xl font-semibold relative">Tech Trainning (MERN + SEO + Digital Marketing )</h1>
       <p className="text-sm md:text-lg mt-2 relative">
-      "Unlock your potential with hands-on, future-ready tech training at Devtrain!"
+      "Unlock your potential with hands-on, future-ready tech training at Devtrain."
       </p>
     </div>
   </header>

@@ -21,7 +21,7 @@ const ServiceBanner = () => {
       {/* Background Image */}
       <img
         className="h-full w-full object-cover"
-        src="/Assets/Images/Service.jpg"
+        src="/Assets/Images/Service.webp"
         alt="Service Banner"
         onLoad={handleLoad} // Trigger handleLoad when the image is loaded
       />

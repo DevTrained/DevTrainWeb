@@ -14,15 +14,15 @@ const Banner_Web_App = () => {
     
     <div className="relative container mx-auto px-4">
       {/* Breadcrumb Navigation */}
-      <nav className="text-sm mb-3 text-gray-200 mt-[6%] sm:mt-[10%] relative">
+      <nav className="text-sm mb-3 text-gray-200 mt-[17%]  sm:mt-[12%] md:mt-[8%] lg:mt-[8%] xl:mt-[6%]  relative">
         <a href="/Services" className="hover:underline text-xl"><b>Our Services</b></a> / 
-        <span className="ml-2 text-xl"><b>Web Application Development</b></span>
+        <span className="ml-2 text-xl"><b>Web App Development</b></span>
       </nav>
       
       {/* Main Header Content */}
-      <h1 className="text-2xl md:text-3xl font-semibold relative">Web Application Development</h1>
+      <h1 className="text-xl md:text-3xl font-semibold relative">Web Application Development</h1>
       <p className="text-sm md:text-lg mt-2 relative">
-      "Empowering your business with seamless, scalable, and cutting-edge web applications."
+      "Empowering your business with seamless, scalable, and cutting-edge web applications".
       </p>
     </div>
   </header>   

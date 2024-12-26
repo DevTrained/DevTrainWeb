@@ -3,20 +3,18 @@ import React from 'react'
 const CareersBanner = () => {
   return (
     <>
-          <header
-      className="relative bg-cover bg-center py-10 md:py-14 text-center text-white font-poppins"
-      style={{ backgroundImage: 'url("/Assets/Images/PagesBanner.jpg")' }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-      
-      <div className="relative container top-4 sm:top-0 mx-auto px-4">
-       
-        
-        {/* Main Header Content */}
-        <h1 className="text-2xl md:text-3xl font-semibold relative mt-24">Careers</h1>
-      </div>
-    </header>
+           <header
+  className="relative bg-cover bg-center h-64 md:h-96 text-white font-poppins"
+  style={{ backgroundImage: 'url("/Assets/Images/PagesBanner.jpg")' }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black opacity-60"></div>
+
+  {/* Main Header Content */}
+  <div className="relative  flex items-center justify-center h-full">
+    <h1 className="text-3xl  pt-12 md:text-5xl font-semibold">Careers</h1>
+  </div>
+</header>
     </>
   )
 }

@@ -12,7 +12,7 @@ const Banner_Wordpress = () => {
     
     <div className="relative container mx-auto px-4">
       {/* Breadcrumb Navigation */}
-      <nav className="text-sm mb-3 text-gray-200 mt-[10%] sm:mt-[6%] relative">
+      <nav className="text-sm mb-3 text-gray-200 mt-[17%]  sm:mt-[12%] md:mt-[8%] lg:mt-[8%] xl:mt-[6%]  relative">
         <a href="/Services" className="hover:underline text-xl"><b>Our Services</b></a> / 
         <span className="ml-2 text-xl"><b>WordPress</b></span>
       </nav>
