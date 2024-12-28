@@ -1,6 +1,5 @@
 import React from "react";
 import MarqueeSection from "../Components/MarqueeSection";
-import Section1_SimplifiedBanner from "../Components/Industries_We_Deals";
 import Faq from "../Components/Faq";
 import Banner_TechTrainning from "../Components/Banner_TechTrainning";
 import Tech_Trainning_sec1 from "../Components/Tech_Trainning_sec1";
@@ -41,7 +40,6 @@ const Tech_Trainings = () => {
       <Tech_Trainning_sec1 />
       <TechTrainnig_sec2 />
       <MarqueeSection />
-      <Section1_SimplifiedBanner />
       <Faq />
     </div>
   );

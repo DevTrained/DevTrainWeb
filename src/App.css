@@ -63,7 +63,7 @@
   }
   
   .popup-video svg {
-    z-index: 10;
+    z-index: 1000;
   }
   
   .circle-text-wrapper {

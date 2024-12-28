@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import Banner_Mobile_App from '../Components/Banner_Mobile_App';
 import Mobile_Application_sec1 from '../Components/Mobile_Application_sec1';
 import Pricing_Mobile_App from '../Components/Pricing_Mobile_App';
-import Section1_SimplifiedBanner from '../Components/Industries_We_Deals';
 import MarqueeSection from '../Components/MarqueeSection';
 import Faq from '../Components/Faq';
+import IndustriesWeDeals from '../Components/IndustriesWeDeals';
 
 const Mobile_Application = () => {
   return (
@@ -38,7 +38,7 @@ const Mobile_Application = () => {
       <Pricing_Mobile_App />
       <MarqueeSection />
       {/* industries */}
-      <Section1_SimplifiedBanner />
+      <IndustriesWeDeals/>
       <Faq />
     </div>
   );

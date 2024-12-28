@@ -49,7 +49,7 @@ const reviews = [
   ];
   
 
-const ReviewCard = ({ name, username, body, img, rating }) => (
+const ReviewCard = ({ name, username, body,rating }) => (
     <div className="flex flex-col md:flex-row items-center md:items-start p-4 w-full bg-gradient-to-r from-[#175255] bg-[#012236]  shadow-lg rounded-lg">
 
     {/* <div className="flex flex-col md:flex-row items-center md:items-start p-4 w-full bg-[#3aaf9a] shadow-lg rounded-lg"> */}

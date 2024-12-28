@@ -117,11 +117,10 @@ const Footer = () => {
               />
               <div className="w-full flex sm:items-start md:items-start md:justify-start sm:justify-start text-center items-center justify-center ">
                 <div className="sm:text-lg  md:text-left md:text-[1rem] lg:text-md xl:text-[1rem]">
-                  <p className=" md:w-80  sm:pl-0  pl-0 " >
-                  <strong> Tech Consultancy Solutions Trainings</strong> <br /> </p>
-                  <p className="w-80   text-center  sm:text-left pl-0 sm:pl-0"  >
-                  Transform your business with Devtrain SMC Pvt Ltd. We offer custom software development, AWS cloud integration, Mobile/Web app development, 
-                  LLM model training, and staff augmentation in USA, UK, USA, and Pakistan.</p>
+                  <p className=" md:w-96   sm:pl-0  pl-0 " >
+                  <strong> Tech Consultancy-Marketing-Trainings</strong> <br /> </p>
+                  <p className="w-[88%]   text-center  sm:text-justify pl-0 sm:pl-0"  >
+                  Transform your business with Devtrain SMC Pvt Ltd. We offer digital marketing, custom software development, AWS cloud integration, Mobile/Web app development, LLM model training, and staff augmentation in USA, UK, USA, and Pakistan.</p>
               </div>
               </div>
             </div> 
@@ -132,9 +131,9 @@ const Footer = () => {
               data-aos="fade-up"
             >
            <h3
-  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold bg-red-500"
+  className="bg-[#089084] bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold "
 >
-  Services
+  Sitemap
 </h3>
               <div className="relative flex items-center ">
             {/* Vertical Line with Balls */}
@@ -198,30 +197,29 @@ const Footer = () => {
 
             {/* Services */}
            
+            
             <div
               className="flex flex-col md:mt-12 md:pl-5 md:w-60 mb-8 xl:mt-16"
               data-aos="fade-up"
             >
-              
-              <h3
-  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold bg-red-500"
+           <h3
+  className="bg-[#089084] bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold "
 >
-  Sitemap
+  Services
 </h3>
-             
               <div className="relative flex items-center ">
-            
+            {/* Vertical Line with Balls */}
             <div className="flex flex-row ml-4 top-0 gap-4">
-              
+              {/* First Vertical Line with Ball */}
               <div className="h-12 flex ml-20 justify-center rotate-90 relative">
-               
+                {/* Line */}
                 <div className="w-1 h-32 bg-[#F7AB0A] absolute"></div>
-                
+                {/* Dot */}
                 <div className="w-4 h-4 border-2 border-[#F7AB0A] bg-black rounded-full relative top-0 transform animate-move-down"></div>
               </div>
             </div>
           </div>
-              <ul className="space-y-2 item-start xl:items-center sm:text-left">
+          <ul className="space-y-2 item-start xl:items-center sm:text-left">
               <li>
                   <a href="/WebApplication" className="hover:text-[#089084]">
                     Wordpress
@@ -274,7 +272,7 @@ const Footer = () => {
               data-aos="fade-up"
             >
               <h3
-  className="bg-gradient-to-r from-[#089084] to-emerald-400 bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold bg-red-500"
+  className="bg-[#089084] bg-clip-text text-transparent text-xl sm:text-lg md:text-xl lg:text-2xl font-bold "
 >
   Contact Us
 </h3>
@@ -322,23 +320,49 @@ const Footer = () => {
     </div>
 </div>
 
-              <div className="flex space-x-8 justify-center md:justify-center mt-10 sm:mt-5">
-                <a href="#" className="social-icon text-blue-600 hover:text-blue-800">
-                  <i className="fab fa-facebook-f text-2xl"></i>
-                </a>
-                <a href="#" className="social-icon text-pink-500 hover:text-pink-700">
-                  <i className="fab fa-instagram text-2xl"></i>
-                </a>
-                <a href="#" className="social-icon text-blue-700 hover:text-blue-900">
-                  <i className="fab fa-linkedin-in text-2xl"></i>
-                </a>
-                <a href="#" className="social-icon text-black hover:text-gray-700">
-                  <i className="fab fa-tiktok text-2xl"></i>
-                </a>
-                <a href="#" className="social-icon text-red-600 hover:text-red-800">
-                  <i className="fab fa-youtube text-2xl"></i>
-                </a>
-              </div>
+             <div className="flex space-x-8 justify-center md:justify-center mt-10 sm:mt-5">
+  <a
+    href="https://www.facebook.com/devtrain.co"
+    className="social-icon text-blue-600 hover:text-blue-800"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-facebook-f text-2xl"></i>
+  </a>
+  <a
+    href="https://www.instagram.com/devtrain.co?igsh=NnUxZnhocjVqa3d3"
+    className="social-icon text-pink-500 hover:text-pink-700"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-instagram text-2xl"></i>
+  </a>
+  <a
+    href="https://www.linkedin.com/company/teamdevtrain/"
+    className="social-icon text-blue-700 hover:text-blue-900"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-linkedin-in text-2xl"></i>
+  </a>
+  <a
+    href="https://www.tiktok.com/@devtrain.co?_t=8sZZhCRT2ET&_r=1"
+    className="social-icon text-black hover:text-gray-700"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-tiktok text-2xl"></i>
+  </a>
+  <a
+    href="https://youtube.com/@dev_train"
+    className="social-icon text-red-600 hover:text-red-800"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-youtube text-2xl"></i>
+  </a>
+</div>
+
             </div>
           </div>
         </div>
@@ -398,33 +422,59 @@ const Footer = () => {
   {/* Social Icons */}
   <div className="flex justify-center w-full">
   <div className="flex space-x-12 mt-6 xl:mt-0 xl:w-1/4 ">
-    <a href="#" className="social-icon text-blue-600 hover:text-blue-800">
+    <a
+      href="https://www.facebook.com/devtrain.co"
+      className="social-icon text-blue-600 hover:text-blue-800"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i className="fab fa-facebook-f text-2xl"></i>
     </a>
-    <a href="#" className="social-icon text-pink-500 hover:text-pink-700">
+    <a
+      href="https://www.instagram.com/devtrain.co?igsh=NnUxZnhocjVqa3d3"
+      className="social-icon text-pink-500 hover:text-pink-700"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i className="fab fa-instagram text-2xl"></i>
     </a>
-    <a href="#" className="social-icon text-blue-700 hover:text-blue-900">
+    <a
+      href="https://www.linkedin.com/company/teamdevtrain/"
+      className="social-icon text-blue-700 hover:text-blue-900"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i className="fab fa-linkedin-in text-2xl"></i>
     </a>
-    <a href="#" className="social-icon text-black hover:text-gray-700">
+    <a
+      href="https://www.tiktok.com/@devtrain.co?_t=8sZZhCRT2ET&_r=1"
+      className="social-icon text-black hover:text-gray-700"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i className="fab fa-tiktok text-2xl"></i>
     </a>
-    <a href="#" className="social-icon text-red-600 hover:text-red-800">
+    <a
+      href="https://youtube.com/@dev_train"
+      className="social-icon text-red-600 hover:text-red-800"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i className="fab fa-youtube text-2xl"></i>
     </a>
   </div>
-  </div>
+</div>
+
 </div>
 
 
 
         {/* Footer Bottom */}
         <div className="py-4 mt-8 lg:mt-12 md:mt-8 ">
-          <p className="text-center text-sm md:text-base lg:text-lg">
+          <p className="text-center text-sm md:text-base px-2 lg:text-lg">
           <hr className="border-t border-black opacity-20 my-4" />
             Copyright 2024 <span className="text-[#24D3B7]">devtrain</span> | Developed By{' '}
-            <span className="text-[#24D3B7]">mdotsolutions</span>. All Rights Reserved
+            <span className="text-[#24D3B7]">Devtrain SMC PVT LTD</span>. All Rights Reserved
           </p>
         </div>
         <style jsx>{`

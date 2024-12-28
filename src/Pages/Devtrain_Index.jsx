@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from "react-helmet-async"; // Import Helmet for meta tags
 import HomeBanner from '../Components/HomeBanner';
-import HomeSection from '../Components/HomeSection1';
 import Faq from '../Components/Faq';
 import YourCompany from '../Components/YourCompany';
 import PortfolioSections from './PortfolioSections';
@@ -9,6 +8,8 @@ import MarqueeSection from '../Components/MarqueeSection';
 import VerifiedBySection from '../Components/VerifiedBySection';
 import HomeServices from './HomeServices';
 import TabbedServices from '../Components/TabbedServices';
+import ServicesBar from '../Components/ServicesBar';
+import IndustriesWeDeals from '../Components/IndustriesWeDeals';
 const Devtrain_Index = () => {
   return (
     <div>
@@ -27,9 +28,11 @@ const Devtrain_Index = () => {
       </Helmet>
       
       <HomeBanner />
+      <ServicesBar/>
       <HomeServices />
       <VerifiedBySection />
       <PortfolioSections />
+      <IndustriesWeDeals/>
       <TabbedServices />
       <MarqueeSection />
       <Faq />

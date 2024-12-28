@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async'; // Import React Helmet
 import MarqueeSection from '../Components/MarqueeSection';
-import Section1_SimplifiedBanner from '../Components/Industries_We_Deals';
 import Faq from '../Components/Faq';
 import Banner_Sementic_Seo from '../Components/Banner_Sementic_Seo';
 import Sementic_SEO_sec1 from '../Components/Sementic_SEO_sec1';
 import Pricing_Sementic_seo from '../Components/Pricing_Sementic_seo';
+import IndustriesWeDeals from '../Components/IndustriesWeDeals';
 
 const Sementic_SEO = () => {
   return (
@@ -41,7 +41,7 @@ const Sementic_SEO = () => {
       <Sementic_SEO_sec1 />
       <Pricing_Sementic_seo />
       <MarqueeSection />
-      <Section1_SimplifiedBanner />
+      <IndustriesWeDeals/>
       <Faq />
     </div>
   );

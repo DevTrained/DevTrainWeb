@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import ContactSection2 from '../Components/ContactSection2';
 import ContactSection1 from '../Components/ContactSection1';
 import ContactBanner from '../Components/ContactBanner';
 

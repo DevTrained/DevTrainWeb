@@ -1,13 +1,11 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import MarqueeSection from "../Components/MarqueeSection";
-import Section1_SimplifiedBanner from "../Components/Industries_We_Deals";
 import Faq from "../Components/Faq";
-import Footer from "../Components/Footer";
 import Banner_Web_App from "../Components/Banner_Web_App";
 import Web_App_sec1 from "../Components/Web_app_sec1";
 import Web_App_sec2 from "../Components/Web_App_sec2";
 import { Helmet } from "react-helmet-async";
+import IndustriesWeDeals from "../Components/IndustriesWeDeals";
 
 const Web_Application = () => {
   return (
@@ -43,7 +41,7 @@ const Web_Application = () => {
       <Web_App_sec1 />
       <Web_App_sec2 />
       <MarqueeSection />
-      <Section1_SimplifiedBanner />
+      <IndustriesWeDeals/>
       <Faq />
     </div>
   );

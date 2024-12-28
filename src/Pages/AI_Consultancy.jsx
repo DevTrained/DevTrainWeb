@@ -4,8 +4,8 @@ import Sub_Service1_AI from '../Components/Sub_Service1_AI';
 import AI_Sec1 from '../Components/AI_Sec1';
 import AI_sec2 from '../Components/AI_sec2';
 import MarqueeSection from '../Components/MarqueeSection';
-import Industries_We_Deals from '../Components/Industries_We_Deals';
 import Faq from '../Components/Faq';
+import IndustriesWeDeals from '../Components/IndustriesWeDeals';
 
 const AI_Consultancy = () => {
   return (
@@ -49,7 +49,7 @@ const AI_Consultancy = () => {
       <AI_Sec1 />
       <AI_sec2 />
       <MarqueeSection />
-      <Industries_We_Deals />
+      <IndustriesWeDeals />
       <Faq />
     </>
   );

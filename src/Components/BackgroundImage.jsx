@@ -66,7 +66,7 @@ const BackgroundImage = () => {
         {/* Active Section Content */}
         <div className="flex px-2 sm:px-0 flex-col md:flex-row sm:items-start md:items-start gap-1  md:space-x-12 md:pt-8  ">
           {/* Left Side: Logo or Image */}
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/3 xl:block lg:block md:block sm:hidden hidden  ">
             <img
               src="/Assets/Images/i1.png"
               alt="Devtrain-Logo"
@@ -75,7 +75,7 @@ const BackgroundImage = () => {
           </div>
 
           {/* Right Side: Content and Progress Bar */}
-          <div className="w-full md:w-2/3  bg-black bg-opacity-70 p-6 md:p-4 rounded-lg shadow-md">
+          <div className="w-full md:w-2/3  bg-black bg-opacity-70 p-6 mt-12 md:mt-0 lg:mt-0 xl:mt-0 md:p-4   rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">{activeSection}</h2>
             <p className="text-lg mb-6">{sections[activeSection].content}</p>
 

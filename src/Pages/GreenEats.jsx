@@ -72,11 +72,11 @@ const GreenEats = () => {
           </h2>
           <br />
           <h3 className="text-2xl md:text-3xl lg:text-6xl font-semibold mb-4 text-[#012236]">
-            Eatzone App
+            Greeneats App
             
           </h3>
           <p className="text-md sm:text-md md:text-base lg:text-lg xl:max-w-lg sm:w-full md:max-w-lg lg:max-w-lg">
-            Eatzone is an innovative food delivery platform that aims to offer fresh, healthy meals delivered right to your door. Featuring a wide range of organic, plant-based options, Eatzone
+            Greeneats is an innovative food delivery platform that aims to offer fresh, healthy meals delivered right to your door. Featuring a wide range of organic, plant-based options, Eatzone
              ensures you enjoy delicious and nutritious food with ease.
           </p>
         </div>

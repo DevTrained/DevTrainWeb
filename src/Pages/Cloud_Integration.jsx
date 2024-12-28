@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import Cloud_integration_sec1 from '../Components/Cloud_integration_sec1';
 import Banner_Cloud_integration from '../Components/Banner_Cloud_integration';
 import Cloud_integration_sec2 from '../Components/Cloud_integration_sec2';
-import Section1_SimplifiedBanner from '../Components/Industries_We_Deals';
 import MarqueeSection from '../Components/MarqueeSection';
 import Faq from '../Components/Faq';
+import IndustriesWeDeals from '../Components/IndustriesWeDeals';
 
 const Cloud_Integration = () => {
   return (
@@ -49,7 +49,7 @@ const Cloud_Integration = () => {
       <Cloud_integration_sec1 />
       <Cloud_integration_sec2 />
       <MarqueeSection />
-      <Section1_SimplifiedBanner />
+      <IndustriesWeDeals/>
       <Faq />
     </div>
   );

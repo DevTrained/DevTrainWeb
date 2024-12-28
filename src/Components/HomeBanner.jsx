@@ -82,11 +82,13 @@ const HomeBanner = () => {
               <span className="material-icons ml-2 text-xl sm:text-2xl">arrow_forward</span>
             </a>
           </div>
-          <div className="text-rotate-circle absolute text-white hidden lg:block xl:block xl:left-[130%] lg:left-[112%] md:left-[110%] sm:left-[90%] left-[100%] lg:top-24 xl:top-40  md:top-32 sm:top-28 top-20 justify-center items-center">
+          <div className="text-rotate-circle absolute text-white hidden lg:block xl:block xl:left-[130%] lg:left-[115%] md:left-[110%] sm:left-[90%] left-[100%] lg:top-24 xl:top-40  md:top-32 sm:top-28 top-20 justify-center items-center">
   <div className="box-circle-round  flex justify-center items-center rounded-full w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 lg:w-52 lg:h-52">
-    <a
-      href="https://www.youtube.com/watch?v=TfU0qjuZkJ4"
-      className="popup-video no-pulse z-1"
+  <a
+      href="https://www.youtube.com/@dev_train"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="z-10"
     >
       <svg className="ml-[145%]  hello" width="50" height="50" viewBox="0 0 50 50" fill="#F7AB0A" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="25" r="24.5" stroke="#F7AB0A"></circle>

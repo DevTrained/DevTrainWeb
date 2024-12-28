@@ -1,12 +1,11 @@
 import React from 'react';
 import { Helmet } from "react-helmet-async"; // Import Helmet for meta tags
-import Navbar from '../Components/Navbar';
 import ServiceBanner from '../Components/ServiceBanner';
 import Section1_Banner from '../Components/Section1_Banner';
 import MarqueeSection from '../Components/MarqueeSection';
 import VerifiedBySection from '../Components/VerifiedBySection';
 import YourCompany from '../Components/YourCompany';
-import Industries_We_Deals from '../Components/Industries_We_Deals';
+import IndustriesWeDeals from '../Components/IndustriesWeDeals';
  // Import Helmet for SEO
 
 const Service_Home = () => {
@@ -24,7 +23,7 @@ const Service_Home = () => {
       <ServiceBanner />
       <Section1_Banner />
       <MarqueeSection />
-      <Industries_We_Deals />
+      <IndustriesWeDeals />
       <VerifiedBySection />
       <YourCompany />
     </>

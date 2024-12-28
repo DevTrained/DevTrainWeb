@@ -47,7 +47,7 @@ const AboutUsSection1 = () => {
           <img
             src="/Assets/Images/about-us-page.jpg"
             alt="Services"
-            className="rounded-lg shadow-lg w-full h-[44vh] sm:h-[50vh] md:h-[78vh] lg:h-[75vh]   object-cover"
+            className="rounded-lg shadow-lg w-full h-[44vh] sm:h-[50vh] md:h-[70vh] lg:h-[60vh]   object-cover"
           />
         </div>
 
@@ -71,13 +71,8 @@ const AboutUsSection1 = () => {
             </div>
           </div>
 
-          <p className="text-black text-lg md:text-lg  lg:text-lg   lg:py-0 xl:py-4 sm:text-xl">
-            Devtrain is a full-service digital agency that specializes in website
-            design and development, web application development, digital
-            marketing, and graphic design. At Devtrain, we are committed to
-            delivering innovative and effective solutions to our clients across
-            a wide range of industries, from small businesses to large
-            corporations.
+          <p className="text-black text-lg md:text-lg  lg:text-lg   lg:py-0 xl:py-2  sm:text-xl">
+          Devtrain is service based digital agency that specializes in digital marketing, SEO, web/mobile app development, cloud integrations and graphic design. At Devtrain, we are committed to delivered innovative and sustainable solutions.
           </p>
 
           {/* Progress Bars with Animation */}
