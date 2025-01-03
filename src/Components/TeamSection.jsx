@@ -2,13 +2,13 @@ import React from 'react';
 
 const Team = () => {
   const ceo = {
-    name: 'John Doe',
+    name: 'Sana Muneeb',
     role: 'CEO & Founder',
     image: '/Assets/Images/1.png', // Replace with the actual image path
     description:
-      'John Doe is the visionary founder of DevTrain. With over a decade of experience in the tech industry, John is committed to empowering the next generation of tech talent and driving innovation.',
+      'Sana Muneeb is the visionary founder of DevTrain with over a decade of experience in the tech industry, Sana is committed to empowering the next generation of tech talent and driving innovation.',
     links: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/sana-muneeb-07631220b',
     },
   };
 
@@ -38,7 +38,8 @@ const Team = () => {
       },
     },
     {
-      name: 'Muhammad Aswab',
+      name: 'Muhammad Aswab'
+      ,
       role: 'Full Stack Developer',
       image: '/Assets/Images/Aswab-Devtrain.png',
       links: {
@@ -114,12 +115,7 @@ const Team = () => {
                 <a href={ceo.links.linkedin} className="text-white hover:text-gray-300">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a href={ceo.links.instagram} className="text-white hover:text-gray-300">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href={ceo.links.facebook} className="text-white hover:text-gray-300">
-                  <i className="fab fa-facebook"></i>
-                </a>
+               
               </div>
             </div>
           </div>

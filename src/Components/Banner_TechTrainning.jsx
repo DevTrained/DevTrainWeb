@@ -8,8 +8,9 @@ const Banner_TechTrainning = () => {
     style={{ backgroundImage: 'url("/Assets/Images/PagesBanner.jpg")' }}
   >
     {/* Overlay */}
-    <div className="absolute inset-0 bg-black opacity-60"></div>
-    
+    {/* <div className="absolute inset-0 bg-black opacity-60"></div>
+     */}
+    <div className="absolute inset-0 bg-[#012236] opacity-70"></div>
     <div className="relative container mx-auto px-4">
       {/* Breadcrumb Navigation */}
       <nav className="text-sm mb-3 text-gray-200 mt-[17%]  sm:mt-[12%] md:mt-[8%] lg:mt-[8%] xl:mt-[6%]  relative">

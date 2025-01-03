@@ -44,7 +44,7 @@ const FlashTaxi = () => {
         
         <div className="relative container top-4 sm:top-0 mx-auto px-4">
           {/* Breadcrumb Navigation */}
-          <nav className="text-sm mb-3 text-gray-200 mt-[6%] relative">
+          <nav className="text-sm mb-3 text-gray-200 mt-[16%] sm:mt-[8%] relative">
             <Link to="/Portfolio" className="hover:underline text-xl"><b>Our Portfolio</b></Link> / 
             <span className="ml-2 text-xl"><b>Case Study</b></span>
           </nav>

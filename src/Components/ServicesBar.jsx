@@ -30,7 +30,7 @@ const ServicesBar = () => {
               key={index}
               src={logo}
               alt={`Verified logo ${index + 1}`}
-              className="w-20 h-20 md:w-32  md:h-32 object-contain"
+              className="w-20 h-20 md:w-24  md:h-24 object-contain"
             />
           ))}
         </div>

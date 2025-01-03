@@ -8,12 +8,12 @@ const GreenEats = () => {
     
   // Define your slides array with image URLs
   const slides = [
-    "/Assets/Images/DOCMagnet1.jpg",
-    "/Assets/Images/DOCMagnet2.jpg",
-    "/Assets/Images/DOCMagnet3.jpg",
-    "/Assets/Images/DOCMagnet4.jpg",
-    "/Assets/Images/DOCMagnet5.jpg",
-    "/Assets/Images/DOCMagnet6.jpg"
+    "/Assets/Images/Greeneats1.png",
+    "/Assets/Images/Greeneats2.png",
+    "/Assets/Images/Greeneats3.png",
+    "/Assets/Images/Greeneats4.png",
+
+
   ];
 
   const goToNext = () => {
@@ -44,13 +44,13 @@ const GreenEats = () => {
     
     <div className="relative container top-4 sm:top-0 mx-auto px-4">
       {/* Breadcrumb Navigation */}
-      <nav className="text-sm mb-3 text-gray-200 mt-[6%] relative">
+      <nav className="text-sm mb-3 text-gray-200 mt-[16%] sm:mt-[8%] relative">
       <Link to="/Portfolio" className="hover:underline text-xl"><b>Our Portfolio</b></Link> / 
         <span className="ml-2 text-xl"><b>Case Study</b></span>
       </nav>
       
       {/* Main Header Content */}
-      <h1 className="text-2xl md:text-3xl font-semibold relative">Eatzone</h1>
+      <h1 className="text-2xl md:text-3xl font-semibold relative">GreenEats</h1>
     </div>
   </header>
       {/* Section 1: Top Section */}
@@ -82,9 +82,9 @@ const GreenEats = () => {
         </div>
 
         {/* Right Image Section */}
-        <div className="h-100 flex justify-center md:justify-end px-4 md:px-0">
+        <div className="h-100 flex justify-center md:justify-end px-4 bg-[#089084] md:px-0">
           <img
-            src="/Assets/Images/GreenEats.png"
+            src="/Assets/Images/Greeneatsbanner.png"
             alt="GreenEats App Mockup"
             className="w-full h-auto max-w-lg md:max-w-xl lg:max-w-2xl self-start"
           />
@@ -213,7 +213,7 @@ const GreenEats = () => {
      <div className="w-full h-[70vh] sm:h-[65vh] md:h-[90vh] lg:h-[100vh] xl:h-screen relative ">
   {/* Image Section */}
   <img 
-    src="/Assets/Images/mainpic1GreenEats.png" 
+    src="/Assets/Images/Greeneatsbenefits.jpg" 
     alt="GreenEats App Features" 
     className="w-full h-full object-cover md:block hidden"
   />
@@ -257,7 +257,7 @@ const GreenEats = () => {
 
 <div className="w-full h-screen sm:h-[60vh] md:h-[70vh] lg:h-[650px] relative">
   <img 
-    src="/Assets/Images/mainpic2GreenEats.png" 
+    src="/Assets/Images/Greeneats-Description.png" 
     alt="description" 
     className="absolute inset-0 w-full h-full object-cover"
   />

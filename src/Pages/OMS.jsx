@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async"; 
 
 const OrderManagement = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Define your slides array with image URLs related to orders
+    
+  // Define your slides array with image URLs
   const slides = [
-    "/Assets/Images/Order1.jpg",
-    "/Assets/Images/Order2.jpg",
-    "/Assets/Images/Order3.jpg",
-    "/Assets/Images/Order4.jpg",
-    "/Assets/Images/Order5.jpg",
-    "/Assets/Images/Order6.jpg"
+    "/Assets/Images/OMS-Devtrain1.jpg",
+    "/Assets/Images/OMS-Devtrain2.jpg",
+    "/Assets/Images/OMS-Devtrain3.jpg",
+    "/Assets/Images/OMS-Devtrain4.jpg",
+
+
+    
   ];
 
   const goToNext = () => {
@@ -24,9 +25,8 @@ const OrderManagement = () => {
   };
 
   return (
-    <div className="w-full text-left font-poppins  overflow-hidden">
-      {/* Helmet for SEO */}
-      <Helmet>
+    <>
+     <Helmet>
         <title>Order Management System - Revolutionizing Business Operations</title>
         <meta
           name="description"
@@ -34,7 +34,6 @@ const OrderManagement = () => {
         />
         <meta name="keywords" content="Order Management System, OMS, Business Efficiency, Real-Time Tracking, Payment Integration" />
         <meta name="author" content="YourCompanyName" />
-
         {/* Open Graph / Facebook */}
         <meta property="og:title" content="Order Management System - Revolutionizing Business Operations" />
         <meta
@@ -44,7 +43,6 @@ const OrderManagement = () => {
         <meta property="og:image" content="/Assets/Images/OrderManagementMockup.png" />
         <meta property="og:url" content="https://yourwebsite.com/order-management-system" />
         <meta property="og:type" content="website" />
-
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Order Management System - Revolutionizing Business Operations" />
@@ -54,8 +52,11 @@ const OrderManagement = () => {
         />
         <meta name="twitter:image" content="/Assets/Images/OrderManagementMockup.png" />
       </Helmet>
-         {/* header  */}
-         <header
+
+    
+    <div className="w-full text-justify font-poppins overflow-hidden">
+           {/* header  */}
+           <header
     className="relative bg-cover bg-center py-10 md:py-14 text-center text-white font-poppins"
     style={{ backgroundImage: 'url("/Public/Assets/Images/PagesBanner.jpg")' }}
   >
@@ -64,116 +65,115 @@ const OrderManagement = () => {
     
     <div className="relative container top-4 sm:top-0 mx-auto px-4">
       {/* Breadcrumb Navigation */}
-      <nav className="text-sm mb-3 text-gray-200 mt-[6%] relative">
-        <Link to="/Portfolio" className="hover:underline text-xl "><b>Our Portfolio</b></Link>  /
+      <nav className="text-sm mb-3 text-gray-200 mt-[16%] sm:mt-[8%] relative">
+      <Link to="/Portfolio"  className="hover:underline text-xl"><b>Our Portfolio</b></Link> / 
         <span className="ml-2 text-xl"><b>Case Study</b></span>
       </nav>
       
       {/* Main Header Content */}
-      <h1 className="text-2xl md:text-3xl font-semibold relative">Order-Management-System</h1>
+      <h1 className="text-2xl md:text-3xl font-semibold relative">Order Management system</h1>
     </div>
   </header>
       {/* Section 1: Top Section */}
       <div className="bg-white py-8 px-0 sm:px-4 md:px-5 lg:px-6 xl:px-6">
         <div className="flex items-center text-left gap-4">
           <div className="w-[6px] bg-[#089084]" style={{ height: '4em' }}></div>
-          <h1 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-[#012236] leading-tight">
-            Revolutionizing Order Management with Our System
-          </h1>
+          <p className="text-2xl md:text-3xl lg:text-3xl font-semibold text-[#012236] ">
+          Revolutionizing Business Billing with Zolo Invoice
+          </p>
         </div>
       </div>
 
-      {/* Section 2: Blue Background Section */}
+      {/* Section 2: blue Background Section */}
       <div className="bg-[#089084] py-16 px-0 md:px-5 lg:px-10 flex flex-col md:flex-row items-center justify-between">
-        {/* Left Text Section */}
-        <div className="text-white sm:w-full mb-8 md:mb-0 md:w-1/2  px-6 sm:px-8 lg:px-1 md:px-5">
-          <h2 className="text-2xl md:text-2xl lg:text-4xl font-semibold">
-            Case Study:
-          </h2>
-          <br />
-          <h3 className="text-2xl md:text-3xl lg:text-6xl text-left font-semibold mb-4 text-[#012236]">
-            Order Management System
-          </h3>
-          <p className="text-md text-left sm:text-md md:text-base lg:text-lg xl:max-w-lg sm:w-full md:max-w-lg lg:max-w-lg">
-            This Order Management System provides a comprehensive solution to manage customer orders, track order statuses, and ensure timely deliveries. It simplifies order processing, payment tracking, and customer management for better business performance.
+        <div className="text-white sm:w-full mb-8 md:mb-0 text-left md:w-1/2 px-6 sm:px-8 lg:px-1 md:px-5">
+          <h2 className="text-2xl md:text-2xl lg:text-4xl font-semibold">Case Study:</h2>
+          <h3 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-4 text-[#3854a1]">Zolo App</h3>
+          <p className="text-md sm:text-md md:text-base lg:text-lg xl:max-w-lg">
+          The Zolo Invoice App is an all-in-one platform designed to streamline business billing and financial management. With features for invoice creation, tracking, and real-time payment analytics, Zolo Invoice empowers businesses to enhance efficiency and make informed financial decisions effortlessly.
           </p>
         </div>
 
         {/* Right Image Section */}
         <div className="h-100 flex justify-center md:justify-end px-4 md:px-0">
-          <img
-            src="/Assets/Images/OrderManagementMockup.png"
-            alt="Order Management System Mockup"
-            className="w-full h-auto max-w-lg md:max-w-xl lg:max-w-2xl"
+          <img 
+            src="/Assets/Images/OMSFront.png" 
+            alt="CoinCraft App Mockup" 
+            className="w-full h-auto max-w-lg md:max-w-xl lg:max-w-2xl self-start"
           />
         </div>
       </div>
 
       {/* Section 3: Introduction */}
       <div className="flex flex-col md:flex-row items-start justify-between px-6 sm:px-8 md:px-10 lg:px-12 py-8">
-        {/* Left Title Section */}
-        <div className="flex flex-col items-start mb-6 md:mb-0 md:mr-10">
-          <div className="w-10 h-[2px] bg-[#089084]" />
-          <h2 className="text-3xl md:text-[2.5rem] font-bold text-[#089084] mt-2">Introduction</h2>
-        </div>
+  {/* Left Title Section */}
+  <div className="flex flex-col items-start mb-6 md:mb-0 md:mr-10">
+    <div className="w-10 h-[2px] bg-[#089084] mt-2"></div>
+    <h2 className="text-3xl md:text-[2.5rem] font-bold text-[#089084] mt-4">Introduction</h2>
+  </div>
 
-        {/* Right Text Section */}
-        <div className="text-gray-800 text-sm sm:text-xl md:text-base lg:text-lg sm:w-full leading-relaxed lg:max-w-xl md:max-w-xl xl:max-w-2xl font-poppins">
-          <p>
-            Our Order Management System streamlines the entire order lifecycle. From receiving orders to dispatching deliveries, the system allows businesses to track inventory, manage payments, and improve customer satisfaction. It’s designed to ensure an efficient and scalable approach to managing customer orders.
-          </p>
-        </div>
-      </div>
+  {/* Right Text Section */}
+  <div className="text-gray-800   text-sm sm:text-xl md:text-base lg:text-lg sm:w-full leading-relaxed lg:max-w-xl md:max-w-xl xl:max-w-2xl font-poppins">
+    <p>
+     
+The Zolo Invoice App redefines the way businesses manage invoicing and financial operations. By offering streamlined billing, secure payment tracking, and comprehensive financial insights, Zolo provides businesses with the tools they need to simplify operations and boost productivity.
+With features like automated invoice creation, real-time payment alerts, and an intuitive user interface, Zolo enables businesses to stay organized, enhance client communication, and make informed financial decisions. The app empowers users to track transactions, manage accounts, and ensure timely payments, delivering a seamless and efficient invoicing experience for businesses of all sizes.
+    </p>
+  </div>
+</div>
 
-      {/* Section 4: Carousel Section */}
-      <div className="flex items-center justify-center min-h-screen bg-[#089084] relative">
-        <div className="relative flex gap-4 overflow-hidden w-full max-w-5xl">
-          {slides.map((slide, index) => {
-            let positionClasses = "";
-            let zIndex = index === currentSlide ? 10 : 1;
 
-            if (index === currentSlide) {
-              positionClasses = "scale-100 z-10";
-            } else if (index === (currentSlide - 1 + slides.length) % slides.length) {
-              positionClasses = "-translate-x-1/2 rotate-[-8deg] scale-90";
-            } else if (index === (currentSlide + 1) % slides.length) {
-              positionClasses = "translate-x-1/2 rotate-[8deg] scale-90";
-            } else {
-              positionClasses = "-translate-x-full pointer-events-none";
-            }
+      {/* Section 4: Carousel */}
+      <div className="flex items-center justify-center min-h-screen bg-[#089084] relative ">
+  <div className="relative flex gap-4 overflow-hidden w-full max-w-5xl">
+    {slides.map((slide, index) => {
+      let positionClasses = "";
+      let zIndex = index === currentSlide ? 10 : 1;
 
-            return (
-              <div
-                key={index}
-                className={`relative transition-all duration-700 transform ease-in-out ${positionClasses}`}
-                style={{ zIndex: zIndex }}
-              >
-                <div className="w-80 h-[600px] rounded-lg p-6 transform hover:scale-105 hover:rotate-[10deg] hover:-translate-y-4 hover:duration-500 hover:ease-in-out">
-                  <img
-                    src={slide}
-                    alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
+      if (index === currentSlide) {
+        positionClasses = "scale-100 z-10";
+      } else if (index === (currentSlide - 1 + slides.length) % slides.length) {
+        positionClasses = "-translate-x-1/2 rotate-[-8deg] scale-90";
+      } else if (index === (currentSlide + 1) % slides.length) {
+        positionClasses = "translate-x-1/2 rotate-[8deg] scale-90";
+      } else {
+        positionClasses = "-translate-x-full pointer-events-none";
+      }
 
-        {/* Updated Arrow Buttons */}
-        <button
-          onClick={goToPrevious}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-full z-20"
+      return (
+        <div
+          key={index}
+          className={`relative transition-all duration-700 transform ease-in-out ${positionClasses}`}
+          style={{ zIndex: zIndex }}
         >
-          &#10094;
-        </button>
-        <button
-          onClick={goToNext}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-full z-20"
-        >
-          &#10095;
-        </button>
-      </div>
+          <div className="w-80 h-[600px] rounded-lg p-6 transform hover:scale-105 hover:rotate-[10deg] hover:-translate-y-4 hover:duration-500 hover:ease-in-out">
+            <img
+              src={slide}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+  {/* Updated Arrow Buttons */}
+  <button
+    onClick={goToPrevious}
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-full z-20"
+  >
+    &#10094;
+  </button>
+  <button
+    onClick={goToNext}
+    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-full z-20"
+  >
+    &#10095;
+  </button>
+</div>
+    
+
 
       {/* Section 5: Problems */}
       <div className="flex flex-col md:flex-row items-start justify-between px-6 sm:px-8 md:px-10 lg:px-11 py-8">
@@ -231,7 +231,7 @@ const OrderManagement = () => {
 <div className="w-full h-[70vh] sm:h-[65vh] md:h-[90vh] lg:h-[100vh] xl:h-screen relative ">
   {/* Image Section */}
   <img 
-    src="/Assets/Images/OrderManagementBenefits.png"  // Updated image reflecting order management
+    src="/Assets/Images/OMS-benefits.jpg"  // Updated image reflecting order management
     alt="Order Management System Features" 
     className="w-full h-full object-cover md:block hidden"
   />
@@ -275,11 +275,11 @@ const OrderManagement = () => {
 
 {/* section 9 for image  */}
 
-<div className="w-full h-screen sm:h-[60vh] md:h-[70vh] lg:h-[650px] relative">
+<div className=" xl:h-screen h-screen  sm:h-[60vh] md:h-[70vh] lg:h-[650px] relative">
   <img 
-    src="/Assets/Images/mainpic2GreenEats.png" 
+    src="/Assets/Images/OMS-Description.png" 
     alt="description" 
-    className="absolute inset-0 w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full  object-cover"
   />
 </div>
 
@@ -311,7 +311,7 @@ const OrderManagement = () => {
 
     </div>
     </div>
-
+</>
   );
 };
 

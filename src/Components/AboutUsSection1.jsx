@@ -40,14 +40,18 @@ const AboutUsSection1 = () => {
   }, []);
 
   return (
+    
     <div className="text-black lg:py-8 py-4 font-poppins overflow-x-hidden">
+      
       <div className=" mx-auto flex flex-col md:flex-row items-start gap-4 sm:px-8 px-4  ">
+        
         {/* Left Image */}
-        <div className="w-full md:w-1/2  flex-shrink-0">
+        <div className="w-full  md:w-1/2  flex-shrink-0">
+              
           <img
-            src="/Assets/Images/about-us-page.jpg"
-            alt="Services"
-            className="rounded-lg shadow-lg w-full h-[44vh] sm:h-[50vh] md:h-[70vh] lg:h-[60vh]   object-cover"
+          src="/Assets/Images/about-us-page.jpg"
+          alt="Services"
+          className="rounded-lg shadow-lg w-full h-[44vh] sm:h-[50vh] md:h-[70vh] lg:h-[60vh]   object-cover"
           />
         </div>
 

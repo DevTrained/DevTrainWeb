@@ -46,7 +46,7 @@ const HomeBanner = () => {
         ></video>
 
         {/* Text overlay */}
-        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="absolute inset-0 bg-[#012236] opacity-70"></div>
         <div className="absolute flex flex-col top-1/3 xl:ml-10 md:ml-10 sm:ml-8 ml-5 space-y-4">
           {/* Flipping Text */}
           <h1 className="text-white text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold leading-tight">

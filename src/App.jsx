@@ -1,6 +1,6 @@
 import React from 'react';
 import { HelmetProvider } from "react-helmet-async";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Footer from './Components/Footer';  // Import Footer component
 import Navbar from './Components/Navbar';
 import DOCMagnet from './Pages/DOCMagnet';
@@ -22,7 +22,7 @@ import ScrollToTop from './Components/ScrollToTop';
 import PortfolioSections from './Pages/PortfolioSections';
 import Careers from './Pages/Careers';
 import ContactUs from './Pages/ContactUs';
-import NotFoundPage from './Components/NotFoundPage';
+import NotFoundPage from './Pages/NotFoundPage';
 import AboutUs from './Pages/AboutUs';
 import Portfolio from './Pages/Portfolio';
 import Tech_Trainings from './Pages/Tech_Trainings';
@@ -57,6 +57,7 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Trainings" element={<Tech_Trainings />} />
           <Route path="*" element={<NotFoundPage />} />
+
         </Routes>
         <Footer />
       </Router>

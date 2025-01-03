@@ -34,7 +34,7 @@ const YourCompany = () => {
 
       {/* Yellow Rounded Div with Animation */}
       <motion.div
-        className="flex items-center ml-4 sm:ml-8 justify-center w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full bg-[#F7AB0A] cursor-pointer"
+        className="flex items-center ml-4 sm:ml-8 justify-center w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20  lg:w-20 lg:h-20 rounded-full bg-[#F7AB0A] cursor-pointer"
         initial={{ x: -100, opacity: 0 }}
         animate={isVisible ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 0.5, ease: "easeInOut" }}

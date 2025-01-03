@@ -17,8 +17,8 @@ const AboutUsBanner = () => {
         style={{ backgroundImage: 'url("/Assets/Images/aboutus.jpg")' }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-
+        {/* <div className="absolute inset-0 bg-black opacity-60"></div> */}
+        <div className="absolute inset-0 bg-[#012236] opacity-70"></div>
         {/* Content Above the Overlay */}
         <header
           className={`relative pt-20 flex flex-col justify-center items-center text-center h-80 text-white font-poppins transition-all duration-1000 ease-out ${

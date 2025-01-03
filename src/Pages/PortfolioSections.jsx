@@ -16,8 +16,8 @@ const PortfolioSections = () => {
       link: "/CoinCraft",
     },
     {
-      image: { src: "/Assets/Images/OMS.png", alt: "Order Management" },
-      title: "Order Management System",
+      image: { src: "/Assets/Images/OMS-banner.png", alt: "Order Management" },
+      title: "Invoice Management System",
       description: "A comprehensive solution to streamline the management of orders, inventory, and shipping for e-commerce businesses.",
       extraLine: "Optimizing workflows and enhancing operational efficiency.",
       link: "/OrderManagement",
@@ -44,6 +44,7 @@ const PortfolioSections = () => {
       link: "/DocMagnet",
     },
   ];
+
 
   return (
     <>
@@ -98,7 +99,7 @@ const PortfolioSections = () => {
       </motion.div>
 
       {/* Portfolio Sections */}
-      <div className="h-full w-full bg-[#def2f1] flex flex-col p-4 space-y-8 lg:space-y-18 overflow-x-hidden ">
+      <div className="h-full w-full bg-[#def2f1] flex flex-col p-4 space-y-8 lg:space-y-18 font-poppins overflow-x-hidden ">
         {sections.map((section, index) => (
           <div
             key={index}
@@ -108,7 +109,7 @@ const PortfolioSections = () => {
           >
             {/* Image Section with Left-Right Animation */}
             <motion.div
-              className="h-64 lg:h-full lg:w-[40%] w-full"
+              className="h-64 sm:h-[80vh] md:h-[90vh]  lg:h-full lg:w-[40%] w-full"
               initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}

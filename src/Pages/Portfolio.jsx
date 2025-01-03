@@ -60,7 +60,8 @@ const Portfolio = () => {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-60"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-60"></div> */}
+        <div className="absolute inset-0 bg-[#012236] opacity-70"></div>
 
         {/* Flex Container for Text and Image */}
         <div className="absolute top-[20%] lg:top-[25%] w-full text-white px-4 sm:px-6 md:px-10 lg:px-16 py-6">

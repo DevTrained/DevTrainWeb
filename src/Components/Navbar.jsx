@@ -5,24 +5,52 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [navbarColor, setNavbarColor] = useState("bg-transparent");
   const location = useLocation();
 
-  // Check if the current path is the 404 page
-  const is404Page = location.pathname === "/NotFoundPage" || location.pathname.startsWith("/404");
+  // Define valid routes for 404 detection
+  const validRoutes = [
+    "/",
+    "/Services", "/MobileApplicationDevelopment", "/DigitalMarketing","/ECommerce", "/WebApplication", 
+    "/Portfolio", "/SEO", "/WordPress", "/TechTrainings" , "/Portfolio", "/CoinCraft",
+    "/Trainings", "/DocMagnet", "/OrderManagement",
+    "/Careers", "/FlashTaxi","/GreenEats", "/PortfolioSections",
+    "/ContactUs", "/AboutUs", "/Trainings",
+    "/Cloud_Integration"
+  ];
+  const is404Page = !validRoutes.includes(location.pathname); // Check if the route is invalid
+
+  // Debugging location.pathname
+  console.log("Current Path:", location.pathname, "| is404Page:", is404Page);
 
   // Handle scroll events for changing navbar color and showing scroll progress
   const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsScrolled(true);  // When scrolling
-    } else {
-      setIsScrolled(false); // When at the top
-    }
+    if (!is404Page) {
+      if (window.scrollY > 0) {
+        setIsScrolled(true); // When scrolling
+      } else {
+        setIsScrolled(false); // When at the top
+      }
 
-    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollTop = window.scrollY;
-    const progress = (scrollTop / scrollHeight) * 100;
-    setScrollProgress(progress);
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollTop = window.scrollY;
+      const progress = (scrollTop / scrollHeight) * 100;
+      setScrollProgress(progress);
+    }
   };
+
+  // Set the navbar color dynamically based on route and scroll state
+  useEffect(() => {
+    if (is404Page) {
+      setNavbarColor("bg-[#089084]"); // Blue color for 404 page
+    } else if (isOpen) {
+      setNavbarColor("bg-[#089084]"); // Blue color when burger menu is open
+    } else if (isScrolled) {
+      setNavbarColor("bg-[#089084]"); // Blue color when scrolled on other pages
+    } else {
+      setNavbarColor("bg-transparent"); // Transparent by default
+    }
+  }, [is404Page, isOpen, isScrolled]);
 
   // Close navbar on route change
   useEffect(() => {
@@ -34,7 +62,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [is404Page]);
 
   // Menu items
   const menuItems = [
@@ -46,17 +74,8 @@ function Navbar() {
     { title: "Contact Us", link: "/ContactUs" },
   ];
 
-  // Navbar class based on scroll, 404 page, burger menu, and whether the menu is open
-  const navbarClass = is404Page
-    ? "bg-black"  // Black for 404 page
-    : isOpen
-    ? "bg-[#089084]"  // Blue when burger menu is open
-    : isScrolled
-    ? "bg-[#089084]"  // Blue when scrolled
-    : "bg-transparent"; // Transparent when at top
-
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${navbarClass}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${navbarColor}`}>
       {/* Scroll Progress Bar */}
       <div className="h-20 lg:h-24 absolute flex items-end justify-end w-full">
         <div
@@ -69,9 +88,9 @@ function Navbar() {
       <div className="h-20 xl:h-24 lg:h-24 p-4 flex items-center justify-end md:gap-4">
         {/* Logo */}
         <img
-          className="absolute sm:h-20 h-20 md:h-24 lg:h-28 xl:h-28 left-1 sm:left-4 z-30"
-          src="/Assets/Images/i1.png"
-          alt="Logo"
+          className="absolute sm:h-36 h-32 md:h-44 lg:h-48 xl:h-48 left-1 sm:left-4 z-30"
+          src="/Assets/Images/Devtrain-Logo1.png"
+          alt="Devtrained-Logo"
         />
 
         {/* Mobile Hamburger Icon */}
@@ -135,7 +154,7 @@ function Navbar() {
         {/* Phone Number Button for Larger Screens */}
         <div className="items-center xl:block lg:block hidden z-30">
           <button className="relative border-2 border-white rounded-full xl:h-12 lg:h-12 md:h-12 text-white py-2 px-3 overflow-hidden group">
-            <span className="  xl:text-lg text-md  font-semibold relative z-10 flex items-center gap-2">
+            <span className="xl:text-lg text-md font-semibold relative z-10 flex items-center gap-2">
               <a
                 href="https://wa.me/923087772529"
                 target="_blank"

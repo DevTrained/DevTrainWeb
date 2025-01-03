@@ -107,27 +107,27 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row md:justify-between lg:space-x-8">
             {/* Logo and description */}
             <div
-              className=" flex flex-col items-center  sm:items-start  w-full md:w-1/3 text-center md:text-left lg:items-start lg:w-1/3 xl:w-1/4"
+              className=" flex flex-col items-center  sm:items-center md:items-start  w-full md:w-1/3 text-center md:text-left lg:items-start lg:w-1/3 xl:w-1/4"
               data-aos="fade-up"
             >
               <img
-                className="h-32 sm:h-32 md:h-32 xl:h-52 lg:ml-0 xl:ml-0"
+                className="h-32 sm:h-32  md:h-32 xl:h-52 lg:ml-0 xl:ml-0"
                 src="/Assets/Images/i2.png"
                 alt="DevTrain"
               />
               <div className="w-full flex sm:items-start md:items-start md:justify-start sm:justify-start text-center items-center justify-center ">
-                <div className="sm:text-lg  md:text-left md:text-[1rem] lg:text-md xl:text-[1rem]">
+                <div className="sm:text-lg   flex flex-col justify-center items-center  md:items-start    md:text-left md:text-[1rem] lg:text-md xl:text-[1rem]">
                   <p className=" md:w-96   sm:pl-0  pl-0 " >
                   <strong> Tech Consultancy-Marketing-Trainings</strong> <br /> </p>
-                  <p className="w-[88%]   text-center  sm:text-justify pl-0 sm:pl-0"  >
-                  Transform your business with Devtrain SMC Pvt Ltd. We offer digital marketing, custom software development, AWS cloud integration, Mobile/Web app development, LLM model training, and staff augmentation in USA, UK, USA, and Pakistan.</p>
+                  <p className="w-full text-center  sm:text-center sm:w-full md:w-[80%] md:text-justify sm:pl-0"  >
+                  Transform your business with Devtrain SMC Pvt Ltd. We offer digital marketing, custom software development, AWS cloud integration, Mobile/Web app development, LLM model training, and staff augmentation in USA, UK, and   Pakistan.</p>
               </div>
               </div>
             </div> 
 
             {/* Navigation Links */}
             <div
-              className="flex flex-col sm:items-start md:pl-8 md:text-[1rem] md:w-32 mt-12 mb-8 lg:mb-0 xl:mt-16"
+              className="flex flex-col sm:items-start md:pl-12 md:text-[1rem] md:w-36 mt-12 mb-8 lg:mb-0 xl:mt-16"
               data-aos="fade-up"
             >
            <h3
@@ -199,7 +199,7 @@ const Footer = () => {
            
             
             <div
-              className="flex flex-col md:mt-12 md:pl-5 md:w-60 mb-8 xl:mt-16"
+              className="flex flex-col md:mt-12 md:pl-9 md:w-60 mb-8 xl:mt-16"
               data-aos="fade-up"
             >
            <h3
@@ -373,7 +373,7 @@ const Footer = () => {
 >  
 <div className=" w-full" >
 <div className="mb-6 xl:mb-0 flex justify-center items-center ">
-    <h3 className="footer-heading text-3xl  font-bold mb-4 text-center">
+    <h3 className="text-[#089084] text-3xl  font-bold mb-4 text-center">
       Contact Us
     </h3>
   </div>
